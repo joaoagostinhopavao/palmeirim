@@ -1,0 +1,186 @@
+/*
+CORES:
+Clara:      #ab4e2f;
+Intermédia: #872725;
+Escura:     #471530;
+*/
+
+*,
+*::after,
+*::before {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    /* Esta instrução define o que é um rem*/
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color:#777;
+    padding:30px;
+}
+.header{
+    height: 95vh;
+    background-image: linear-gradient(
+        to top left,
+        rgba(171, 78, 47, 0.3),
+        rgba(71, 21, 48, 0.315)), 
+        url(../img/rsz_vinho-teste.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position:relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0 75vh);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%,0 75vh);
+}
+
+.logo-box{
+    position:absolute;
+    top: 20%;
+    left: 40%;
+    transform:translate(-50%,-50%);
+}
+
+.logo{
+    height: 55px;
+}
+
+
+.text-box{
+    position:absolute;
+    top:40%;    /* Em relação ao elemento pai */
+    left:40%;   /* Em relação ao elemento pai */
+    transform:translate(-50%,-50%);/* Em relação ao próprio elemento */
+    text-align:center;
+}
+
+.heading-primary{
+    color:#fff;
+    text-transform: uppercase;
+    backface-visibility: hidden; /* Para corrigir um deslizamento no final da anim. (imperceptivel) */
+    margin-bottom: 60px; /* Para o botão: A margem a dar entre o texto e o botão*/
+}
+
+.heading-primary-main{
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    animation-name: moveInFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary-sub{
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 14.3px;
+    animation: moveInFromRight 1s ease-out;
+
+}
+
+@keyframes moveInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+        /*transform: translateX(-100px) rotate(-50deg);*/
+    }
+    60% {
+        /*transform: rotate(120deg);*/
+    }
+    80% {
+        transform:translateX(10px);
+    }
+ 
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+ 
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+ 
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn:link,
+.btn:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 1000px;
+    transition: all .2s; /* a transição TEM QUE SER na transition state *. É para fazer uma animação smooth, caso contrário o transform é aplicado com "um salto" */
+    position: relative;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.5);
+}
+
+.btn:active{
+    transform: translateY(-1px); /* o -1px é em relação ao estado inicial*/
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+
+.btn-white{
+    background-color: #fff;
+    color: #333;
+}
+
+.btn::after{ /* Por detrás do botão */
+    content:""; /* É obrigatório*/
+    display: inline-block;/* É obrigatório, mas pode não ser inline-block*/
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position:absolute; /* por o relative em .btn:visited */
+    top:0;
+    left:0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after{
+    background-color:#fff;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInFromBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
