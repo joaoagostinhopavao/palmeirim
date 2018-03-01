@@ -1,0 +1,36 @@
+// typography
+
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color:$cor-cinza-escuro;
+  padding:3rem;
+}
+
+.heading-primary{
+  color:$cor-branca;
+  text-transform: uppercase;
+  backface-visibility: hidden; /* Para corrigir um deslizamento no final da anim. (imperceptivel) */
+  margin-bottom: 6rem; /* Para o botão: A margem a dar entre o texto e o botão*/
+
+  &--main{
+    display: block;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    animation-name: moveInFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  &--sub{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5rem;
+    animation: moveInFromRight 1s ease-out;
+
+  }
+}

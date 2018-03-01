@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  margin:0;
+  padding:0;
+  box-sizing: inherit;
+}
+
+html{
+  // Esta instrução define o que é um rem
+  // Não está em _typography.scss porque é mais para definir um
+  // setting geral para os tamanhos do que propriamente para
+  // definir tipografia.
+  font-size: 62.5%;
+}
+
+body{
+  box-sizing: border-box;
+}
