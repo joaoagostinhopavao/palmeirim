@@ -1,0 +1,25 @@
+{
+  "name": "palmeirim",
+  "version": "1.0.0",
+  "description": "Site para os vinhos Palmeirim.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "compile:sass": "node-sass ./sass/main.scss ./css/palmeirim.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaoagostinhopavao/palmeirim.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaoagostinhopavao/palmeirim/issues"
+  },
+  "homepage": "https://github.com/joaoagostinhopavao/palmeirim#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
