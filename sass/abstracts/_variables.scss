@@ -1,10 +1,27 @@
 //_variables
-$cor-primaria-claro: #f86441;
-$cor-primaria: #ab4e2f;
-$cor-primaria-escuro: #7f3a22;
+$cor-primaria-claro: #e23749;
+$cor-primaria: #982630;
+$cor-primaria-escuro: #6f1b23;
 
 $cor-cinza-escuro:#777;
+$cor-cinza-claro-1:#f7f7f7;//Para a secção historia
 $cor-preta:#000;
 $cor-preto:$cor-preta;
 $cor-branca:#fff;
 $cor-branco:$cor-branca;
+
+
+//Titulos
+$cor-titulo-secundario:$cor-primaria;
+$tamanho-fonte-titulo-secundario:3.2rem;
+$tamanho-fonte-subtitulo-secundario:3.3rem;
+
+
+//Sub titulos
+$entrelinhamento-titulo:3.5rem;
+$separador-subtitulo:15%;
+$espaco-separador-subtitulo:5%;
+$espessura-separador:1px;
+$separador-alinhamento-vertical:0.8em;
+
+$cor-separador:$cor-primaria-escuro

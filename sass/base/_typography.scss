@@ -1,8 +1,9 @@
 // typography
 
 body{
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+  //font-family: "Lato", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.7;
   color:$cor-cinza-escuro;
@@ -15,6 +16,7 @@ body{
   backface-visibility: hidden; /* Para corrigir um deslizamento no final da anim. (imperceptivel) */
   margin-bottom: 6rem; /* Para o botão: A margem a dar entre o texto e o botão*/
 
+
   &--main{
     display: block;
     font-size: 3rem;
@@ -26,11 +28,100 @@ body{
   }
 
   &--sub{
+    margin-top:-1.5rem;
+    font-family: 'Tangerine', cursive;
+    text-transform: lowercase;
     display: block;
-    font-size: 1.5rem;
+    font-size: 4.6rem;
     font-weight: 700;
-    letter-spacing: 1.5rem;
+    letter-spacing: 0;
     animation: moveInFromRight 1s ease-out;
+
+  }
+}
+
+.heading-secondary{
+  font-size: 3.2rem;
+  font-weight: 700;
+  color:$cor-titulo-secundario;
+  //border:1px solid red;
+  position: relative;
+
+
+  &--main{
+    display: inline-block;
+    position:absolute;
+    top:0;
+    left:0;
+    text-transform: uppercase;
+    //border: 1px solid blue;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    animation-name: moveInFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  &--sub{
+    font-family: 'Merriweather', serif;
+    display: table;
+    position:absolute;
+    top:$entrelinhamento-titulo;
+    left:0;
+    white-space: nowrap;
+    text-transform: lowercase;
+    text-align: center;
+    //margin: -3rem 1rem 0 18rem;
+    font-size: 2.25rem;
+    font-style: italic;
+    letter-spacing: .5rem;
+    animation: moveInFromRight 1s ease-out;
+    &::before,&::after{
+      border-top: $espessura-separador solid $cor-separador;
+      content:"";
+      display:table-cell;
+      position:relative;
+      top:0.8em;
+      width:$separador-subtitulo;
+
+
+    }
+    &::before{right: $espaco-separador-subtitulo}
+    &::after{left: $espaco-separador-subtitulo}
+    /*
+    position:absolute;
+    top:7.5rem;
+    left:0;
+    border: 1px solid green;
+    text-transform: lowercase;
+    text-align: center;
+    margin: -3rem 1rem 0 18rem;
+    background-color: $cor-branca;
+    font-size: 2.25rem;
+    font-style: italic;
+    letter-spacing: .5rem;
+    z-index: 950;
+    animation: moveInFromRight 1s ease-out;*/
+
+    /*
+    &::after{
+      content:"ertyertyetyet";
+      display: block;
+      border-top: 1px solid red;
+      height: 50%;
+      width: 130%;
+      position:absolute;
+      top:2rem;
+      left:-1.5rem;
+      z-index:900;
+    }
+  */
+  }
+
+
+
+  &--tracos{
 
   }
 }
