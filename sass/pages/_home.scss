@@ -2,4 +2,21 @@
   background-color: $cor-cinza-claro-1;
   padding:25rem 0;
   margin-top:-30vh;
+
+
 }
+
+.section-historia__text{
+  padding-top:$gutter-vertical;
+}
+
+.section-historia__foto{
+  width:65rem;
+  position:absolute;
+  right: $body-padding;
+  top: 73vh;
+  margin:0 auto;
+
+} 
+
+

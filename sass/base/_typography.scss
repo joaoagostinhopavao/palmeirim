@@ -7,7 +7,6 @@ body{
   font-size: 16px;
   line-height: 1.7;
   color:$cor-cinza-escuro;
-  padding:3rem;
 }
 
 .heading-primary{
@@ -52,15 +51,14 @@ body{
     display: inline-block;
     position:absolute;
     top:0;
-    left:0;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; // Para que os espaços entre as palavras não deem origem a novas linhas
     text-transform: uppercase;
     //border: 1px solid blue;
     font-size: 3rem;
     font-weight: 400;
     letter-spacing: .5rem;
-    animation-name: moveInFromLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
   }
 
   &--sub{
@@ -68,11 +66,11 @@ body{
     display: table;
     position:absolute;
     top:$entrelinhamento-titulo;
-    left:0;
+    left: 50%;
+    transform: translateX(-50%);
     white-space: nowrap;
     text-transform: lowercase;
     text-align: center;
-    //margin: -3rem 1rem 0 18rem;
     font-size: 2.25rem;
     font-style: italic;
     letter-spacing: .5rem;
@@ -89,39 +87,7 @@ body{
     }
     &::before{right: $espaco-separador-subtitulo}
     &::after{left: $espaco-separador-subtitulo}
-    /*
-    position:absolute;
-    top:7.5rem;
-    left:0;
-    border: 1px solid green;
-    text-transform: lowercase;
-    text-align: center;
-    margin: -3rem 1rem 0 18rem;
-    background-color: $cor-branca;
-    font-size: 2.25rem;
-    font-style: italic;
-    letter-spacing: .5rem;
-    z-index: 950;
-    animation: moveInFromRight 1s ease-out;*/
-
-    /*
-    &::after{
-      content:"ertyertyetyet";
-      display: block;
-      border-top: 1px solid red;
-      height: 50%;
-      width: 130%;
-      position:absolute;
-      top:2rem;
-      left:-1.5rem;
-      z-index:900;
-    }
-  */
   }
 
 
-
-  &--tracos{
-
-  }
 }
