@@ -1,0 +1,22 @@
+.feature-box{
+    position:relative;
+    //border: 1px dashed red;
+    background-color: rgba($cor-branca,.8);
+    padding:2rem;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($cor-preta,.15);
+
+    &__foto{ 
+        width: 20rem;
+        margin-top:4rem;
+    }
+    &__btn-box{
+        position:absolute;
+        left:21rem;
+        top:30rem;
+    }
+    &__btn{
+        width:6rem;
+    }
+}
+  

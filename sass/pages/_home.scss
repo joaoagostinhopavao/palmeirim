@@ -8,15 +8,27 @@
 
 .section-historia__text{
   padding-top:$gutter-vertical;
+  text-align:justify;
 }
 
 .section-historia__foto{
-  width:65rem;
-  position:absolute;
+  width: 70rem;
+  position: absolute;
   right: $body-padding;
-  top: 73vh;
-  margin:0 auto;
-
+  top: 73.5vh;
 } 
+
+.section-fichas-tecnicas{
+  padding:20rem 0;
+  background-image: linear-gradient(
+     to top right,
+     rgba($cor-primaria-claro,0.1),
+     rgba($cor-primaria-escuro,0.25)),
+     url(../img/banner-vinhos-TXT-baixa.jpg);
+     background-size: cover;
+  background-position: bottom;
+}
+ 
+
 
 

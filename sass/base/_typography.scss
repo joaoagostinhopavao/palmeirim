@@ -1,10 +1,9 @@
 // typography
 
 body{
-  //font-family: "Lato", sans-serif;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: $default-text-size;
   line-height: 1.7;
   color:$cor-cinza-escuro;
 }
@@ -63,18 +62,20 @@ body{
 
   &--sub{
     font-family: 'Merriweather', serif;
+    font-size: $tamanho-fonte-subtitulo-secundario;
+    font-style: italic;
+    font-weight: 400;
     display: table;
-    position:absolute;
     top:$entrelinhamento-titulo;
+    position:absolute;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
     text-transform: lowercase;
     text-align: center;
-    font-size: 2.25rem;
-    font-style: italic;
+   
     letter-spacing: .5rem;
-    animation: moveInFromRight 1s ease-out;
+    
     &::before,&::after{
       border-top: $espessura-separador solid $cor-separador;
       content:"";
@@ -88,6 +89,71 @@ body{
     &::before{right: $espaco-separador-subtitulo}
     &::after{left: $espaco-separador-subtitulo}
   }
+}
+
+.heading-terciario{
+  position:relative;
+  color:$cor-titulo-terciario;
+  text-transform: uppercase;
+  backface-visibility: hidden; /* Para corrigir um deslizamento no final da anim. (imperceptivel) */
+  margin-bottom: 6rem; /* Para o botão: A margem a dar entre o texto e o botão*/
 
 
+  &--main{
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    animation-name: moveInFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  
+  &--sub{
+    font-family: 'Merriweather', serif;
+    font-size: $tamanho-fonte-subtitulo-secundario;
+    font-style: italic;
+    font-weight: 400;
+    display: block;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    position:absolute;
+    left: 50%;
+    top:3rem;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    animation-name: moveInFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+  }
+  &--subsub{
+    margin-top:0rem;
+    text-transform: lowercase;
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    position:absolute;
+    left: 50%;
+    top:5.6rem;
+    transform: translateX(-50%);
+    white-space: nowrap;
+
+    animation: moveInFromRight 1s ease-out;
+
+  }
+}
+
+.paragraph{
+  font-size: $default-text-size;
+  &:not(:last-child){
+    margin-bottom: $espaco-entre-paragrafos;
+  }
 }

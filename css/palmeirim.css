@@ -50,7 +50,7 @@ img {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.7;
   color: #777; }
 
@@ -97,18 +97,18 @@ body {
     letter-spacing: .5rem; }
   .heading-secondary--sub {
     font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
     display: table;
+    top: 4rem;
     position: absolute;
-    top: 3.5rem;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
     text-transform: lowercase;
     text-align: center;
-    font-size: 2.25rem;
-    font-style: italic;
-    letter-spacing: .5rem;
-    animation: moveInFromRight 1s ease-out; }
+    letter-spacing: .5rem; }
     .heading-secondary--sub::before, .heading-secondary--sub::after {
       border-top: 1px solid #6f1b23;
       content: "";
@@ -121,14 +121,75 @@ body {
     .heading-secondary--sub::after {
       left: 5%; }
 
+.heading-terciario {
+  position: relative;
+  color: #982630;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  /* Para corrigir um deslizamento no final da anim. (imperceptivel) */
+  margin-bottom: 6rem;
+  /* Para o botão: A margem a dar entre o texto e o botão*/ }
+  .heading-terciario--main {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: moveInFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .heading-terciario--sub {
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
+    display: block;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    position: absolute;
+    left: 50%;
+    top: 3rem;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    animation-name: moveInFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .heading-terciario--subsub {
+    margin-top: 0rem;
+    text-transform: lowercase;
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    position: absolute;
+    left: 50%;
+    top: 5.6rem;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    animation: moveInFromRight 1s ease-out; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 2.5rem; }
+
 .u-center-text {
   text-align: center; }
 
 .u-center-text {
   margin: 0 auto; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -179,11 +240,27 @@ body {
   animation: moveInFromBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
+.feature-box {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .feature-box__foto {
+    width: 20rem;
+    margin-top: 4rem; }
+  .feature-box__btn-box {
+    position: absolute;
+    left: 21rem;
+    top: 30rem; }
+  .feature-box__btn {
+    width: 6rem; }
+
 .header {
   height: 95vh;
   background-image: url(../img/banner-principal-Baixo.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 75vh);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 75vh); }
@@ -238,11 +315,17 @@ body {
   margin-top: -30vh; }
 
 .section-historia__text {
-  padding-top: 8rem; }
+  padding-top: 8rem;
+  text-align: justify; }
 
 .section-historia__foto {
-  width: 65rem;
+  width: 70rem;
   position: absolute;
   right: 3rem;
-  top: 73vh;
-  margin: 0 auto; }
+  top: 73.5vh; }
+
+.section-fichas-tecnicas {
+  padding: 20rem 0;
+  background-image: linear-gradient(to top right, rgba(226, 55, 73, 0.1), rgba(111, 27, 35, 0.25)), url(../img/banner-vinhos-TXT-baixa.jpg);
+  background-size: cover;
+  background-position: bottom; }

@@ -9,7 +9,7 @@
                   rgba($cor-primaria-escuro,0.15)),*/
                   url(../img/banner-principal-Baixo.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   position:relative;
   clip-path: polygon(0 0, 100% 0, 100% 65vh,0 75vh);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh,0 75vh);

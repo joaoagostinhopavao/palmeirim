@@ -20,20 +20,29 @@ $cor-branca:#fff;
 $cor-branco:$cor-branca;
 
 
+// TIPOGRAFIA
+$default-text-size:1.6rem;
+
+
 //Titulos
 $cor-titulo-secundario:$cor-primaria;
+$cor-titulo-terciario:$cor-primaria;
 $tamanho-fonte-titulo-secundario:3.2rem;
-$tamanho-fonte-subtitulo-secundario:3.3rem;
+
 
 
 //Sub titulos
-$entrelinhamento-titulo:3.5rem;
+$tamanho-fonte-subtitulo-secundario:3rem;
+$entrelinhamento-titulo:4rem;
 $separador-subtitulo:15%;
 $espaco-separador-subtitulo:5%;
 $espessura-separador:1px;
 $separador-alinhamento-vertical:0.8em;
 
 $cor-separador:$cor-primaria-escuro;
+
+// Texto
+$espaco-entre-paragrafos:2.5rem;
 
 // GRID
 $grid-width:114rem;
