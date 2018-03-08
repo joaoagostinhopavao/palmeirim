@@ -28,24 +28,24 @@
      background-size: cover;
   background-position: 0rem -5rem;
 
-  clip-path: polygon(0 30vh, 100% 0, 100% 105vh,0 135vh);
-  -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 105vh,0 135vh);
+  clip-path: polygon(0 20vh, 100% 0, 100% 115vh,0 135vh);
+  -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 115vh,0 135vh);
 
 }  
 
 .section-guia{
   background-color: $cor-cinza-claro-1;
-  padding:25rem 0;
+  padding:20rem 0 5rem 0;
   margin-top: -30rem;
 }
 
 .section-equipa{
   background-color: $cor-cinza-claro-1;
-  padding:25rem 0;
-  margin-top:-30rem;
+  padding:1rem 0 10rem 0;
+  margin-top:0;
 }
 
-.section-mensagens{
+.section-mensagens{   
   background-color: $cor-cinza-claro-1;
   padding:25rem 0;
   margin-top:-30rem;

@@ -17,9 +17,9 @@ body{
 
   &--main{
     display: block;
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: 400;
-    letter-spacing: .5rem;
+    letter-spacing: .6rem;
     animation: moveInFromLeft 2s ease-out;
   }
 
@@ -28,7 +28,7 @@ body{
     font-family: 'Tangerine', cursive;
     text-transform: lowercase;
     display: block;
-    font-size: 4.6rem;
+    font-size: 5.5rem;
     font-weight: 700;
     letter-spacing: 0;
     animation: moveInFromRight 2s ease-out;
@@ -36,16 +36,14 @@ body{
   }
 }
 
-.heading-secondary{
-  font-size: 3.2rem;
+.heading-secondary{ //Estes headings contêm uma linha por detrás do titulo
   font-weight: 700;
   color:$cor-titulo-secundario;
   //border:1px solid red;
   position: relative;
 
-
   &--main{
-    display: inline-block;
+    display: inline-block; 
     position:absolute;
     top:0;
     left: 50%;
@@ -53,14 +51,14 @@ body{
     white-space: nowrap; // Para que os espaços entre as palavras não deem origem a novas linhas
     text-transform: uppercase;
     //border: 1px solid blue;
-    font-size: 3rem;
-    font-weight: 400;
-    letter-spacing: .5rem;
-  }
+    font-size: 3.2rem;
+    font-weight: 400; 
+    letter-spacing: .9rem;
+  } 
 
   &--sub{
     font-family: 'Merriweather', serif;
-    font-size: $tamanho-fonte-subtitulo-secundario;
+    font-size: $tamanho-fonte-titulo-secundario-sub;
     font-style: italic;
     font-weight: 400;
     display: table;
@@ -109,10 +107,10 @@ body{
     //animation: moveInFromLeft 3s ease-out;
   }
 
-  
+   
   &--sub{
     font-family: 'Merriweather', serif;
-    font-size: $tamanho-fonte-subtitulo-secundario;
+    font-size: $tamanho-fonte-titulo-secundario-sub;
     font-style: italic;
     font-weight: 400;
     display: block;
@@ -146,18 +144,17 @@ body{
 }
 
 .heading-secondary-inv{
-    font-size: 3.2rem;
     font-weight: 700;
     color:$cor-titulo-secundario;
     //border:1px solid red;
     position: relative;
     
-
+  
 
     &--main{
       //border: 1px solid red;
       font-family: 'Merriweather', serif;
-      font-size: $tamanho-fonte-subtitulo-secundario;
+      font-size: $tamanho-fonte-titulo-secundario-sub;
       font-style: italic;
       font-weight: 400;
       display: inline-block;
@@ -166,15 +163,13 @@ body{
       left: 50%;
       transform: translateX(-50%);
       white-space: nowrap; // Para que os espaços entre as palavras não deem origem a novas linhas
-      font-size: 3rem;
-      font-weight: 400;
       letter-spacing: .5rem;
     }
 
     &--sub{
       //border: 1px solid blue;
       font-family: 'Merriweather', serif;
-      font-size: $tamanho-fonte-subtitulo-secundario;
+      font-size:5rem;
       font-style: italic;
       font-weight: 400;
       display: table;
@@ -232,9 +227,6 @@ body{
 
 
 .section-mensagens{
-  &-titulo{
-    // Este titulo é imagem e está em _home.scss
-    }
   &-texto{
     &-msg{
       text-align: justify;
