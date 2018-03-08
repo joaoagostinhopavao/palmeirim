@@ -20,9 +20,7 @@ body{
     font-size: 3rem;
     font-weight: 400;
     letter-spacing: .5rem;
-    animation-name: moveInFromLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+    animation: moveInFromLeft 2s ease-out;
   }
 
   &--sub{
@@ -33,7 +31,7 @@ body{
     font-size: 4.6rem;
     font-weight: 700;
     letter-spacing: 0;
-    animation: moveInFromRight 1s ease-out;
+    animation: moveInFromRight 2s ease-out;
 
   }
 }
@@ -108,9 +106,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
 
-    animation-name: moveInFromLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+    //animation: moveInFromLeft 3s ease-out;
   }
 
   
@@ -128,9 +124,7 @@ body{
     top:3rem;
     transform: translateX(-50%);
     white-space: nowrap;
-    animation-name: moveInFromLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+    //animation: moveInFromLeft 3s ease-out;
 
   }
   &--subsub{
@@ -146,10 +140,108 @@ body{
     transform: translateX(-50%);
     white-space: nowrap;
 
-    animation: moveInFromRight 1s ease-out;
+    //animation: moveInFromRight 1s ease-out;
 
   }
 }
+
+.heading-secondary-inv{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color:$cor-titulo-secundario;
+    //border:1px solid red;
+    position: relative;
+    
+
+
+    &--main{
+      //border: 1px solid red;
+      font-family: 'Merriweather', serif;
+      font-size: $tamanho-fonte-subtitulo-secundario;
+      font-style: italic;
+      font-weight: 400;
+      display: inline-block;
+      position:absolute;
+      top:0;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap; // Para que os espaços entre as palavras não deem origem a novas linhas
+      font-size: 3rem;
+      font-weight: 400;
+      letter-spacing: .5rem;
+    }
+
+    &--sub{
+      //border: 1px solid blue;
+      font-family: 'Merriweather', serif;
+      font-size: $tamanho-fonte-subtitulo-secundario;
+      font-style: italic;
+      font-weight: 400;
+      display: table;
+      top:$entrelinhamento-titulo;
+      position:absolute; 
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      text-transform: uppercase;
+      text-align: center;
+    
+      letter-spacing: .5rem;
+      
+      
+      &::before,&::after{
+        border-top: $espessura-separador solid $cor-separador;
+        content:"";
+        display:table-cell;
+        position:relative;
+        top:0em;
+        width:$separador-subtitulo;
+
+
+      } 
+      &::before{right: calc(#{$espaco-separador-subtitulo} + 2rem)}
+      &::after{left: calc(#{$espaco-separador-subtitulo} + 2rem)}
+    }
+  }
+
+  .card{
+    &-foto-titulo{
+      width:22rem;
+      margin-top: 5rem;
+    }
+    &-heading{
+      text-transform: uppercase;
+  
+    }
+    &-firma{
+      text-transform: uppercase;
+    }
+  }
+
+  .socio{
+    &-dados{
+        &--nome{
+          text-transform: uppercase;
+          text-align: center;
+        }
+        &--cargo{
+          text-align: center; 
+        }
+    }
+}
+
+
+.section-mensagens{
+  &-titulo{
+    // Este titulo é imagem e está em _home.scss
+    }
+  &-texto{
+    &-msg{
+      text-align: justify;
+      }
+    }
+}
+
 
 .paragraph{
   font-size: $default-text-size;

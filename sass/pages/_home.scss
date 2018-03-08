@@ -2,8 +2,6 @@
   background-color: $cor-cinza-claro-1;
   padding:25rem 0;
   margin-top:-30vh;
-
-
 }
 
 .section-historia__text{
@@ -19,15 +17,57 @@
 } 
 
 .section-fichas-tecnicas{
-  padding:20rem 0;
+  margin-top:-15rem;
+  padding:22rem 0;
+  padding-bottom:35rem;
   background-image: linear-gradient(
      to top right,
-     rgba($cor-primaria-claro,0.1),
-     rgba($cor-primaria-escuro,0.25)),
-     url(../img/banner-vinhos-TXT-baixa.jpg);
+     rgba($cor-primaria-claro,0),
+     rgba($cor-primaria-escuro,1)),
+     url(../img/banner-vinhos-TXT-baixa-3.png);
      background-size: cover;
-  background-position: bottom;
+  background-position: 0rem -5rem;
+
+  clip-path: polygon(0 30vh, 100% 0, 100% 105vh,0 135vh);
+  -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 105vh,0 135vh);
+
+}  
+
+.section-guia{
+  background-color: $cor-cinza-claro-1;
+  padding:25rem 0;
+  margin-top: -30rem;
 }
+
+.section-equipa{
+  background-color: $cor-cinza-claro-1;
+  padding:25rem 0;
+  margin-top:-30rem;
+}
+
+.section-mensagens{
+  background-color: $cor-cinza-claro-1;
+  padding:25rem 0;
+  margin-top:-30rem;
+
+  &-titulo{
+    margin-bottom:5rem;
+    
+    &__foto{
+      display:block;
+      margin:0 auto;
+      width:38rem;
+    }
+  }
+  &-texto{
+    &-msg{
+      &:not(:last-child){
+        margin-bottom:3rem;
+      }
+    }
+  }
+}
+
  
 
 

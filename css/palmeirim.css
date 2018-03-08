@@ -66,9 +66,7 @@ body {
     font-size: 3rem;
     font-weight: 400;
     letter-spacing: .5rem;
-    animation-name: moveInFromLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
+    animation: moveInFromLeft 2s ease-out; }
   .heading-primary--sub {
     margin-top: -1.5rem;
     font-family: 'Tangerine', cursive;
@@ -77,7 +75,7 @@ body {
     font-size: 4.6rem;
     font-weight: 700;
     letter-spacing: 0;
-    animation: moveInFromRight 1s ease-out; }
+    animation: moveInFromRight 2s ease-out; }
 
 .heading-secondary {
   font-size: 3.2rem;
@@ -101,7 +99,7 @@ body {
     font-style: italic;
     font-weight: 400;
     display: table;
-    top: 4rem;
+    top: 3rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -115,7 +113,7 @@ body {
       display: table-cell;
       position: relative;
       top: 0.8em;
-      width: 15%; }
+      width: 3rem; }
     .heading-secondary--sub::before {
       right: 5%; }
     .heading-secondary--sub::after {
@@ -136,10 +134,7 @@ body {
     letter-spacing: .5rem;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
-    animation-name: moveInFromLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
+    transform: translateX(-50%); }
   .heading-terciario--sub {
     font-family: 'Merriweather', serif;
     font-size: 3rem;
@@ -153,10 +148,7 @@ body {
     left: 50%;
     top: 3rem;
     transform: translateX(-50%);
-    white-space: nowrap;
-    animation-name: moveInFromLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
+    white-space: nowrap; }
   .heading-terciario--subsub {
     margin-top: 0rem;
     text-transform: lowercase;
@@ -168,8 +160,72 @@ body {
     left: 50%;
     top: 5.6rem;
     transform: translateX(-50%);
+    white-space: nowrap; }
+
+.heading-secondary-inv {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #982630;
+  position: relative; }
+  .heading-secondary-inv--main {
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     white-space: nowrap;
-    animation: moveInFromRight 1s ease-out; }
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .5rem; }
+  .heading-secondary-inv--sub {
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
+    display: table;
+    top: 3rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .5rem; }
+    .heading-secondary-inv--sub::before, .heading-secondary-inv--sub::after {
+      border-top: 1px solid #6f1b23;
+      content: "";
+      display: table-cell;
+      position: relative;
+      top: 0em;
+      width: 3rem; }
+    .heading-secondary-inv--sub::before {
+      right: calc(5% + 2rem); }
+    .heading-secondary-inv--sub::after {
+      left: calc(5% + 2rem); }
+
+.card-foto-titulo {
+  width: 22rem;
+  margin-top: 5rem; }
+
+.card-heading {
+  text-transform: uppercase; }
+
+.card-firma {
+  text-transform: uppercase; }
+
+.socio-dados--nome {
+  text-transform: uppercase;
+  text-align: center; }
+
+.socio-dados--cargo {
+  text-align: center; }
+
+.section-mensagens-texto-msg {
+  text-align: justify; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -241,20 +297,66 @@ body {
   animation-fill-mode: backwards; }
 
 .feature-box {
+  perspective: 1500rem;
+  -moz-perspective: 1500rem;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 2rem;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  height: 45rem; }
+  .feature-box__side {
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+    height: 45rem;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; }
+    .feature-box__side--front {
+      background-color: white; }
+    .feature-box__side--back {
+      transform: rotateY(180deg); }
+      .feature-box__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffe606, #887a01); }
+      .feature-box__side--back-2 {
+        background-image: linear-gradient(to right bottom, #ffe606, #887a01); }
+      .feature-box__side--back-3 {
+        background-image: linear-gradient(to right bottom, #ffe606, #887a01); }
+      .feature-box__side--back-4 {
+        background-image: linear-gradient(to right bottom, #ffe606, #887a01); }
+  .feature-box:hover .feature-box__side--front {
+    transform: rotateY(-180deg); }
+  .feature-box:hover .feature-box__side--back {
+    transform: rotateY(0); }
   .feature-box__foto {
     width: 20rem;
     margin-top: 4rem; }
   .feature-box__btn-box {
     position: absolute;
     left: 21rem;
-    top: 30rem; }
+    top: 20rem; }
   .feature-box__btn {
     width: 6rem; }
+
+.card {
+  margin: 3rem 11rem 0 11rem;
+  padding: 6rem 3rem 3rem 3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25); }
+  .card-foto {
+    width: 40rem;
+    margin-left: -8rem; }
+
+.socio-foto {
+  display: block;
+  width: 25rem;
+  margin: 0 auto; }
+
+.socio-dados--nome {
+  display: block; }
+
+.socio-dados--cargo {
+  display: block; }
 
 .header {
   height: 95vh;
@@ -309,6 +411,23 @@ body {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
+.footer {
+  height: 50vh;
+  margin-top: -15rem;
+  background-image: linear-gradient(to top left, #e23749, #6f1b23), url(../img/banner-principal-Baixo.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 20vh, 100% 0, 100% 105vh, 0 135vh);
+  -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 105vh, 0 135vh); }
+  .footer__logo-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .footer__logo {
+    height: 13rem; }
+
 .section-historia {
   background-color: #f7f7f7;
   padding: 25rem 0;
@@ -325,7 +444,34 @@ body {
   top: 73.5vh; }
 
 .section-fichas-tecnicas {
-  padding: 20rem 0;
-  background-image: linear-gradient(to top right, rgba(226, 55, 73, 0.1), rgba(111, 27, 35, 0.25)), url(../img/banner-vinhos-TXT-baixa.jpg);
+  margin-top: -15rem;
+  padding: 22rem 0;
+  padding-bottom: 35rem;
+  background-image: linear-gradient(to top right, rgba(226, 55, 73, 0), #6f1b23), url(../img/banner-vinhos-TXT-baixa-3.png);
   background-size: cover;
-  background-position: bottom; }
+  background-position: 0rem -5rem;
+  clip-path: polygon(0 30vh, 100% 0, 100% 105vh, 0 135vh);
+  -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 105vh, 0 135vh); }
+
+.section-guia {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -30rem; }
+
+.section-equipa {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -30rem; }
+
+.section-mensagens {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -30rem; }
+  .section-mensagens-titulo {
+    margin-bottom: 5rem; }
+    .section-mensagens-titulo__foto {
+      display: block;
+      margin: 0 auto;
+      width: 38rem; }
+  .section-mensagens-texto-msg:not(:last-child) {
+    margin-bottom: 3rem; }

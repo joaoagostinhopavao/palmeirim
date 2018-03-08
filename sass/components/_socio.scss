@@ -1,0 +1,20 @@
+.socio{
+
+    //border: 1px solid blue;
+    
+    &-foto{
+        
+        display:block;
+        width:25rem;
+        margin:0 auto;
+    }
+    &-dados{
+        
+        &--nome{
+            display:block;          
+        }
+        &--cargo{
+            display:block;
+        }
+    }
+} 
