@@ -13,11 +13,13 @@
   position:relative;
   clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
+  -moz-clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
+
 
   &__logo-box{
     position:absolute;
     top: 25%;
-    left: 50%;
+    left:50%;
     transform:translate(-50%,-50%);
   }
 

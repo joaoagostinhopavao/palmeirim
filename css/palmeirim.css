@@ -49,7 +49,7 @@ img {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777; }
@@ -73,12 +73,11 @@ body {
     text-transform: lowercase;
     display: block;
     font-size: 5.5rem;
-    font-weight: 700;
+    font-weight: normal;
     letter-spacing: 0;
     animation: moveInFromRight 2s ease-out; }
 
 .heading-secondary {
-  font-weight: 700;
   color: #982630;
   position: relative; }
   .heading-secondary--main {
@@ -96,7 +95,7 @@ body {
     font-family: 'Merriweather', serif;
     font-size: 4rem;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 300;
     display: table;
     top: 3rem;
     position: absolute;
@@ -223,9 +222,9 @@ body {
 .section-mensagens-texto-msg {
   text-align: justify; }
 
-.paragraph {
+.paragraph, iframe {
   font-size: 1.6rem; }
-  .paragraph:not(:last-child) {
+  .paragraph:not(:last-child), iframe:not(:last-child) {
     margin-bottom: 2.5rem; }
 
 .u-center-text {
@@ -242,6 +241,66 @@ body {
 
 .u-margin-bottom-small {
   margin-bottom: 4rem; }
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/"Roboto 100.ttf");
+  font-style: normal;
+  font-weight: 100; }
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/"Roboto 300.ttf");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/"Roboto 900.ttf");
+  font-style: normal;
+  font-weight: 900; }
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/"Roboto regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: Merriweather;
+  src: url(fonts/"Merriweather regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: Merriweather;
+  src: url(fonts/"Merriweather 300.ttf");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: Merriweather;
+  src: url(fonts/"Merriweather 900.ttf");
+  font-style: normal;
+  font-weight: 900; }
+
+@font-face {
+  font-family: Merriweather;
+  src: url(fonts/"Merriweather italic.ttf");
+  font-style: italic;
+  font-weight: normal; }
+
+@font-face {
+  font-family: Tangerine;
+  src: url(fonts/"Tangerine regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: Tangerine;
+  src: url(fonts/"Tangerine 700.ttf");
+  font-style: normal;
+  font-weight: 700; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -312,9 +371,32 @@ body {
     .feature-box__side--front {
       background-color: white; }
     .feature-box__side--back {
-      transform: rotateY(180deg); }
+      transform: rotateY(180deg);
+      background-image: -moz-linear-gradient(to right bottom, rgba(247, 247, 247, 0.85), rgba(119, 119, 119, 0.85));
+      background-image: -webkit-linear-gradient(to right bottom, rgba(247, 247, 247, 0.85), rgba(119, 119, 119, 0.85));
+      background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.85), rgba(119, 119, 119, 0.85)); }
       .feature-box__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffe606, #887a01); }
+        background-image: #f7f7f7; }
+        .feature-box__side--back-1__heading {
+          font-size: 2.8rem;
+          font-weight: 300;
+          text-transform: uppercase;
+          text-align: right;
+          color: #fff;
+          position: absolute;
+          top: 6rem;
+          left: 6rem;
+          width: 75%; }
+        .feature-box__side--back-1__heading-span {
+          padding: 1rem 1.5rem;
+          background-image: -moz-linear-gradient(to right bottom, rgba(226, 55, 73, 0.85), rgba(152, 38, 48, 0.85));
+          background-image: -webkit-linear-gradient(to right bottom, rgba(226, 55, 73, 0.85), rgba(152, 38, 48, 0.85));
+          background-image: linear-gradient(to right bottom, rgba(226, 55, 73, 0.85), rgba(152, 38, 48, 0.85));
+          box-decoration-break: clone; }
+        .feature-box__side--back-1__btn {
+          position: absolute;
+          top: 30rem;
+          left: 2rem; }
       .feature-box__side--back-2 {
         background-image: linear-gradient(to right bottom, #ffe606, #887a01); }
       .feature-box__side--back-3 {
@@ -361,7 +443,8 @@ body {
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 85vh);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 85vh); }
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 85vh);
+  -moz-clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 85vh); }
   .header__logo-box {
     position: absolute;
     top: 25%;

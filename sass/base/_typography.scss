@@ -2,7 +2,7 @@
 
 body{
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-size: $default-text-size;
   line-height: 1.7;
   color:$cor-cinza-escuro;
@@ -29,7 +29,7 @@ body{
     text-transform: lowercase;
     display: block;
     font-size: 5.5rem;
-    font-weight: 700;
+    font-weight: normal;//700;
     letter-spacing: 0;
     animation: moveInFromRight 2s ease-out;
 
@@ -37,7 +37,7 @@ body{
 }
 
 .heading-secondary{ //Estes headings contêm uma linha por detrás do titulo
-  font-weight: 700;
+  //font-weight: 700;
   color:$cor-titulo-secundario;
   //border:1px solid red;
   position: relative;
@@ -54,13 +54,14 @@ body{
     font-size: 3.2rem;
     font-weight: 400; 
     letter-spacing: .9rem;
+
   } 
 
   &--sub{
     font-family: 'Merriweather', serif;
     font-size: $tamanho-fonte-titulo-secundario-sub;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 300;
     display: table;
     top:$entrelinhamento-titulo;
     position:absolute;
@@ -235,7 +236,7 @@ body{
 }
 
 
-.paragraph{
+.paragraph, iframe{
   font-size: $default-text-size;
   &:not(:last-child){
     margin-bottom: $espaco-entre-paragrafos;
