@@ -16,9 +16,23 @@ html{
 
 body{
   box-sizing: border-box;
-  padding:$body-padding;
+
 }
 
 img{
   border: $border;
+}
+
+.wrapper{
+  background-color: $cor-branca;
+  padding:$body-padding;
+}
+
+
+//iFRAME:
+.iframe-historia{
+  padding:0;
+  border:none;
+  width:100%;
+  height: 58rem;
 }

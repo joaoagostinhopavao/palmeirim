@@ -2,31 +2,33 @@
     perspective: 1500rem;
     -moz-perspective: 1500rem;
     position:relative;
-    height: 45rem;
+    height: 48rem;
     
     &__side{
-        padding:2rem;
+        height: 48rem;
+        padding:1.5rem;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($cor-preta,.25);
-        height: 45rem;
         transition: all 1s ease;
         position: absolute;
         top:0;
         left:0;
         width:100%;
-        backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    
         &--front{
             background-color: rgba($cor-branca,1);
         }
  
         &--back{
             transform: rotateY(180deg);
-            background-image: -moz-linear-gradient(to right bottom, rgba($cor-cinza-claro-1,.85),rgba($cor-cinza-escuro,.85));
-            background-image: -webkit-linear-gradient(to right bottom, rgba($cor-cinza-claro-1,.85),rgba($cor-cinza-escuro,.85));
-            background-image: linear-gradient(to right bottom, rgba($cor-cinza-claro-1,.85),rgba($cor-cinza-escuro,.85));
-            &-1{
-                background-image:$cor-cinza-claro-1;
+            //Fundo
+            background-image: -moz-linear-gradient(to right bottom, rgba($cor-branca,.85),rgba($cor-cinza-claro-1,.85));
+            background-image: -webkit-linear-gradient(to right bottom, rgba($cor-branca,.85),rgba($cor-cinza-claro-1,.85));
+            background-image: linear-gradient(to right bottom, rgba($cor-branca,.85),rgba($cor-cinza-claro-1,.85));
+            &-1,&-2,&-3,&-4{
+                //Titulo atrás
                 &__heading{
                     font-size: 2.8rem;
                     font-weight: 300;
@@ -35,40 +37,104 @@
                     //border:1px solid red;
                     color:$cor-branca; 
                     position:absolute;
-                    top:6rem;
-                    left:6rem;
-                    width:75%;
-                
+                    top:2rem;
+                    left:3.8rem;
+                    width:85%;
                 }
                 &__heading-span{
-                    padding:1rem 1.5rem;
+                    padding:0.65rem 1.5rem;
+                    -webkit-box-decoration-break:clone;
+                    box-decoration-break:clone;
                     background-image: -moz-linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria,.85));
                     background-image: -webkit-linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria,.85));
                     background-image: linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria,.85));
 
-                    box-decoration-break: clone;
+                     
                 }
                 &__details{
-
+                    padding-top:9rem;
+                    ul{   
+                        list-style: none;
+                        li{
+                            text-align: center;
+                            font-size: 1.5rem;
+                            padding:0.2rem;
+                            &:not(:last-child){
+                                border-bottom:1px solid $cor-cinza-escuro;
+                            }
+                        }
+                    }
+                    .key{
+                        font-weight: 900;
+                    }
                 }
 
-                &__btn{
-                    position:absolute;
-                    top:30rem;
-                    left:2rem;
+                &__button{
+                    display:inline-block;
+                    white-space: nowrap;
+                    padding: 2rem;
+                   
+                    margin-left:50%;
+                    transform: translateX(-50%);
+                
+                }
+
+          
+            } 
+
+            &-1{
+                &__details{
+                    line-height: 1.8rem;
                 }
             }
 
             &-2{
-                background-image: linear-gradient(to right bottom, $cor-secundaria-claro, $cor-secundaria-escuro);
+                &__details{
+                    line-height: 1.7rem;
+                }
+                &__heading-span{
+                    padding:0.65rem 1.5rem;
+                    -webkit-box-decoration-break:clone;
+                    box-decoration-break:clone;
+                    background-image: -moz-linear-gradient(to right bottom, rgba($cor-secundaria-claro,.85),rgba($cor-secundaria-escuro,.85));
+                    background-image: -webkit-linear-gradient(to right bottom, rgba($cor-secundaria-claro,.85),rgba($cor-secundaria-escuro,.85));
+                    background-image: linear-gradient(to right bottom, rgba($cor-secundaria-claro,.85),rgba($cor-secundaria-escuro,.85)); 
+                }
+               
             }
 
             &-3{
-                background-image: linear-gradient(to right bottom, $cor-secundaria-claro, $cor-secundaria-escuro);
+                &__details{
+                    line-height: 2rem;
+                }
+                &__heading-span{
+                    padding:0.65rem 1.5rem;
+                    -webkit-box-decoration-break:clone;
+                    box-decoration-break:clone;
+                    background-image: -moz-linear-gradient(to right bottom, rgba($cor-secundaria-claro,.85),rgba($cor-secundaria-escuro,.85));
+                    background-image: -webkit-linear-gradient(to right bottom, rgba($cor-secundaria-claro,.85),rgba($cor-secundaria-escuro,.85));
+                    background-image: linear-gradient(to right bottom, rgba($cor-secundaria-claro,.85),rgba($cor-secundaria-escuro,.85));
+
+                     
+                }
+                
             }
 
             &-4{
-                background-image: linear-gradient(to right bottom, $cor-secundaria-claro, $cor-secundaria-escuro);
+                &__details{
+                    line-height: 2.4rem;
+                }
+                &__heading-span{
+                    padding:0.65rem 1.5rem;
+                    -webkit-box-decoration-break:clone;
+                    box-decoration-break:clone;
+                    background-image: -moz-linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria,.85));
+                    background-image: -webkit-linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria,.85));
+                    background-image: linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria,.85));
+
+                     
+                }
+                
             }
 
        

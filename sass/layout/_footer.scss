@@ -2,7 +2,7 @@
 
 
 .footer{
-    height: 50vh;
+    height: 80vh;
     margin-top:-15rem;
     background-image: linear-gradient(
                     to top left,
@@ -25,5 +25,86 @@
     &__logo{
       height: 13rem;
     }
+
+    &__text-box{
+      position:absolute;
+      width:60%;
+      border-top:1px solid $cor-branca;
+      top:60%;
+      left:50%;
+      color:$cor-branca;
+      margin-top:3rem;
+      transform:translateX(-50%);
+
+      &__contacts{
+        //border:1px solid yellow;
+        position:relative;
+        
+      
+        
+        &__email{
+          
+          width:40%;
+          
+          text-transform: lowercase;
+
+          position:absolute;
+          left:9rem;
+          top:2rem;
+          width:30%;
+          &--icon{
+            width:4rem;
+            margin-right: 1rem;
+          }
+          &--text{
+            position:absolute;
+            top:0.8rem;
+          }
+        }
+
+        &__telefone{
+          position:absolute;
+          left:41rem;
+          top:2rem;
+          width:30%;
+          
+          text-transform: lowercase;
+
+          &--icon{
+            width:4rem;
+            margin-right: 1rem;
+          }
+          &--text{
+            position:absolute;
+            top:0.8rem;
+          }
+        }
+
+        &__facebook{
+          position:absolute;
+          left:58rem;
+          top:2rem;
+         
+          width:30%;
+          text-transform: lowercase;
+
+          &--icon{
+            width:4rem;
+            margin-right: 1rem;
+          }
+          &--text{
+            position:absolute;
+            top:0.8rem;
+            color:white;
+            text-decoration:none;
+          }
+        }
+      
+    }
   
   }
+
+  
+        
+        
+      }

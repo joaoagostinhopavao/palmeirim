@@ -68,7 +68,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    text-transform: lowercase;
+    //text-transform: lowercase;
     text-align: center;
    
     letter-spacing: .5rem;
@@ -207,10 +207,23 @@ body{
     }
     &-heading{
       text-transform: uppercase;
+      color:$cor-primaria;
+      &:not(:first-child){
+        margin-top:1rem;
+      }
   
     }
     &-firma{
       text-transform: uppercase;
+    }
+
+    &-local{
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    &-txt{
+      line-height: 1.8rem;
     }
   }
 
@@ -227,17 +240,31 @@ body{
 }
 
 
-.section-mensagens{
-  &-texto{
-    &-msg{
-      text-align: justify;
+.section-mensagens{   
+  .coluna-mensagens{
+    &-titulo{
+      font-weight: 900;
+      text-transform: uppercase;
+      color:$cor-primaria;
+    }
+    &-texto{
+      &:not(:last-child){
+        margin-bottom:3rem;
       }
     }
+    &-autor{
+      display:inline;
+    
+      font-weight: 900;
+    }
+  }
+  
 }
 
 
-.paragraph, iframe{
+.paragraph{
   font-size: $default-text-size;
+  text-align:justify;
   &:not(:last-child){
     margin-bottom: $espaco-entre-paragrafos;
   }

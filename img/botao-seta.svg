@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1280 1024" style="enable-background:new 0 0 1280 1024;" xml:space="preserve">
+	 viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{fill:#952631;}
+	.st1{fill:#942631;}
+	.st2{fill:none;stroke:#972631;stroke-width:2;stroke-miterlimit:10;}
 </style>
+<title>botao-seta</title>
 <g>
-	<circle class="st0" cx="640" cy="512" r="27"/>
-	<path class="st1" d="M640,541c-16,0-29-13-29-29c0-16,13-29,29-29c16,0,29,13,29,29C669,528,656,541,640,541z M640,487
-		c-13.8,0-25,11.2-25,25s11.2,25,25,25s25-11.2,25-25S653.8,487,640,487z"/>
-</g>
-<g>
-	<polygon class="st1" points="640,519.4 630.3,510.7 631.7,509.3 640,516.6 647.8,508.8 649.2,510.2 	"/>
+	<g>
+		<circle class="st0" cx="29" cy="29" r="27"/>
+		<path class="st1" d="M29,58C13,58,0,45,0,29S13,0,29,0s29,13,29,29S45,58,29,58z M29,4C15.2,4,4,15.2,4,29s11.2,25,25,25
+			s25-11.2,25-25S42.8,4,29,4z"/>
+	</g>
+	<g>
+		<polyline class="st2" points="30.2,11.5 22.6,17.6 30.2,23.7 		"/>
+		<path class="st2" d="M15.7,31c0,7.4,6,13.4,13.4,13.4s13.4-6,13.4-13.4s-6-13.4-13.4-13.4h-6.5"/>
+	</g>
 </g>
 </svg>

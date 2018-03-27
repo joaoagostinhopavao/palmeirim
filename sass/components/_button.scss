@@ -33,7 +33,25 @@
     color: $cor-cinza-escuro;
 
     &::after{
-      background-color:#fff;
+      background-color:$cor-branca;
+    }
+  }
+
+  &--cor-vinho-tinto{
+    background-color: $cor-primaria;
+    color: $cor-branca;
+
+    &::after{
+      background-color: $cor-primaria;
+    }
+  }
+
+  &--cor-vinho-branco{
+    background-color: $cor-secundaria;
+    color: $cor-branca;
+
+    &::after{
+      background-color: $cor-secundaria;
     }
   }
 
