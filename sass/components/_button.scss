@@ -10,7 +10,7 @@
     border-radius: 10rem;
     transition: all .2s; /* a transição TEM QUE SER na transition state *. É para fazer uma animação smooth, caso contrário o transform é aplicado com "um salto" */
     position: relative;
-    font-size: 1.6rem;
+    font-size: 1.6rem;    
   }
 
   &:hover{

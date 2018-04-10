@@ -17,10 +17,18 @@ body{
 
   &--main{
     display: block;
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: 400;
-    letter-spacing: .6rem;
+    letter-spacing: 0.6rem;
+    white-space: nowrap;
     animation: moveInFromLeft 2s ease-out;
+   
+    @include respond(phone){
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+    }
+
+
   }
 
   &--sub{
@@ -28,10 +36,15 @@ body{
     font-family: 'Tangerine', cursive;
     text-transform: lowercase;
     display: block;
-    font-size: 5.5rem;
+    font-size: 5rem;
     font-weight: normal;//700;
-    letter-spacing: 0;
+    letter-spacing: 1.2rem;
+    white-space: nowrap;
     animation: moveInFromRight 2s ease-out;
+    @include respond(phone){
+      font-size: 3rem;
+      letter-spacing: 0.6rem;
+    }
 
   }
 }
@@ -55,11 +68,25 @@ body{
     font-weight: 400; 
     letter-spacing: .9rem;
 
+    @include respond(tab-land){
+      font-size:2.2rem;
+      letter-spacing: .5rem;
+    }
+    
+    @include respond(tab-port){
+      font-size:2.2rem;
+      letter-spacing: .5rem;
+    }
+
+    @include respond(phone){
+      font-size:1.5rem;
+    }
+
   } 
 
   &--sub{
     font-family: 'Merriweather', serif;
-    font-size: $tamanho-fonte-titulo-secundario-sub;
+    font-size: 3.5rem;
     font-style: italic;
     font-weight: 300;
     display: table;
@@ -85,6 +112,20 @@ body{
     }
     &::before{right: $espaco-separador-subtitulo}
     &::after{left: $espaco-separador-subtitulo}
+
+    @include respond(tab-land){
+      font-size:2.2rem;
+    }
+
+    @include respond(tab-port){
+      font-size:2.2rem;
+    }
+
+    @include respond(phone){
+      font-size:2rem;
+    }
+
+
   }
 }
 
@@ -145,17 +186,27 @@ body{
 }
 
 .heading-secondary-inv{
-    font-weight: 700;
+    font-weight: 900;
     color:$cor-titulo-secundario;
-    //border:1px solid red;
+    //border:1px solid green;
     position: relative;
-    
-  
 
+    @include respond(tab-land){
+      margin-bottom: 10rem !important;
+    }
+    
+    @include respond(tab-port){
+      margin-bottom: 10rem !important;
+    }
+
+    @include respond(phone){
+      margin-bottom: 10rem !important;
+    }
+    
     &--main{
       //border: 1px solid red;
       font-family: 'Merriweather', serif;
-      font-size: $tamanho-fonte-titulo-secundario-sub;
+      font-size: 4rem;
       font-style: italic;
       font-weight: 400;
       display: inline-block;
@@ -165,6 +216,20 @@ body{
       transform: translateX(-50%);
       white-space: nowrap; // Para que os espaços entre as palavras não deem origem a novas linhas
       letter-spacing: .5rem;
+
+      @include respond(tab-land){
+        font-size:3rem;
+        letter-spacing: .5rem;
+      }
+      
+      @include respond(tab-port){
+        font-size:2.5rem;
+        letter-spacing: .5rem;
+      }
+  
+      @include respond(phone){
+        font-size:2rem;
+      }
     }
 
     &--sub{
@@ -197,6 +262,18 @@ body{
       } 
       &::before{right: calc(#{$espaco-separador-subtitulo} + 2rem)}
       &::after{left: calc(#{$espaco-separador-subtitulo} + 2rem)}
+
+      @include respond(tab-land){
+        font-size:3.5rem;
+      }
+  
+      @include respond(tab-port){
+        font-size:2.5rem;
+      }
+  
+      @include respond(phone){
+        font-size:2rem;
+      }
     }
   }
 
@@ -239,7 +316,6 @@ body{
     }
 }
 
-
 .section-mensagens{   
   .coluna-mensagens{
     &-titulo{
@@ -251,21 +327,54 @@ body{
       &:not(:last-child){
         margin-bottom:3rem;
       }
+      @include respond(phone){
+        font-size: $default-text-size-small;
+      }
     }
     &-autor{
       display:inline;
-    
       font-weight: 900;
     }
   }
   
 }
 
-
 .paragraph{
-  font-size: $default-text-size;
+  //font-size: $default-text-size;
   text-align:justify;
   &:not(:last-child){
     margin-bottom: $espaco-entre-paragrafos;
+    
+    @include respond(tab-land){
+      margin-bottom: $espaco-entre-paragrafos-small;
+    }
+  
+    @include respond(tab-port){
+      margin-bottom: $espaco-entre-paragrafos-small;
+    }
+  
+    @include respond(phone){
+      margin-bottom: $espaco-entre-paragrafos-small;
+    }
+  }
+
+
+  @include respond(phone){
+    font-size: $default-text-size-small;
   }
 }
+
+.footer{
+  font-size: 1.4rem;
+
+  @include respond(tab-port){
+    font-size:1.5rem;
+    &__copyright{
+      font-size:1rem;
+    }
+  }
+
+  @include respond(phone){ 
+    font-size: 1.2rem;
+  }
+} 

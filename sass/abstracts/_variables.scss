@@ -4,7 +4,7 @@
 $body-padding:3rem;
 
 //GRELHA
-$border: none;//1px dashed gray; //ou none
+$border: none; //1px dashed gray; //ou none
 $cor-do-fundo:none;//#eee; //ou none
 
 // CORES
@@ -16,6 +16,8 @@ $cor-secundaria-claro: #ffe606;
 $cor-secundaria: #c5b205;
 $cor-secundaria-escuro: #887a01;
 
+$cor-preta:#000;
+$cor-preto: $cor-preta;
 $cor-cinza-escuro:#777;
 $cor-cinza-claro-1:#f7f7f7;//Para a secção historia
 $cor-preta:#000;
@@ -26,12 +28,13 @@ $cor-branco:$cor-branca;
 
 // TIPOGRAFIA
 $default-text-size:1.8rem;
+$default-text-size-small:1.3rem;
 
 
 //Secondary main titulos
 $cor-titulo-secundario:$cor-primaria;
 $cor-titulo-terciario:$cor-primaria;
-$tamanho-fonte-titulo-secundario-main:3.5;
+
 
 
 //Secondary sub titulos
@@ -46,10 +49,12 @@ $cor-separador:$cor-primaria-escuro;
 
 // Texto
 $espaco-entre-paragrafos:2.5rem;
+$espaco-entre-paragrafos-small:1.2rem;
 
 // GRID
 $grid-width:114rem;
 $gutter-vertical:4rem;
+$gutter-vertical-small:2rem;
 $gutter-horizontal:6rem;
 
 

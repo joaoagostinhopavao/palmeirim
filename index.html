@@ -16,527 +16,670 @@
         <link rel="stylesheet" href="css/palmeirim.css">
         <title>Palmeirim D'Inglaterra</title>
     </head>
+
     <body>
-    <div class="wrapper">
-        <header class="header">
-        <div class="header__logo-box">
-            <img src="img/logo-icon.svg" alt="Logo" class="header__logo">
-        </div>
-        <div class="header__text-box">
-            <h1 class="heading-primary">
-                <span class="heading-primary--main">Palmeirim d´ Inglaterra</span>
-                <span class="heading-primary--sub">de per si es muy bueno</span>
-            </h1>
-
-            <!--<a href="#" class="btn btn--white btn--animated">Descubra os nossos vinhos</a> -->
-        </div>
-        </header>
-
-        <main>
-            <section class="section-historia"> 
-                <div class="row">
-                    <div class="col-1-of-2">              
-                        <h2 class="heading-secondary u-margin-bottom-medium">
-                            <span class="heading-secondary--main">Palmeirim d'Inglaterra</span>
-                            <span class="heading-secondary--sub">História</span>
-                        </h2>
-                        <div class="section-historia__text u-center-text">
-                                
-                                <iframe src="doc/iframe-historia.html" scrolling="no" class="iframe-historia"></iframe>
-                                
-                        </div> 
+    <!-- WRAPPER -->
+        <div class="wrapper">
+            <!-- NAVIGATION -->
+                <div class="navigation">
+                    <input type="checkbox" class="navigation__checkbox" id="navi-toggle"/>
+                    <label for="navi-toggle" class="navigation__button">
+                        <span class="navigation__icon"></span>
+                    </label>
+                    <div class="navigation__background">
+                        &nbsp;
                     </div>
-                    <div class="col-1-of-2">
-                        <img src="img/foto-historia-baixa.png" alt="" class="section-historia__foto">
-                    </div>
+                    <nav class="navigation__nav">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="http://localhost:8080/#historia" class="navigation__link">História</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Fichas técnicas</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Onde estamos</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Quem somos</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">As quintas</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Notas de prova</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </section>
-            <section class="section-fichas-tecnicas">
-                <div class="row">
-                    <!--TINTO RESERVA 2015-->
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <!--Frente-->
-                            <div class="feature-box__side feature-box__side--front">
-                                <h3 class="heading-terciario">
-                                    <span class="heading-terciario--main">Tinto</span>
-                                    <span class="heading-terciario--sub">Reserva</span>
-                                    <span class="heading-terciario--subsub">2015</span>
-                                </h3>
-                                <div class="feature-box__btn-box">
-                                        <img src="img/botao-seta.svg" alt="botao" class="feature-box__btn">
-                                </div>
-                                <img src="./img/tinto-2015-baixa.png" alt="garrafa de tinto reserva" class="feature-box__foto">
-                            </div>
 
-                            <!--Trás-->
-                            <div class="feature-box__side feature-box__side--back feature-box__side--back-1">
-                                <h4 class="feature-box__side--back-1__heading">
-                                    <span class="feature-box__side--back-1__heading-span">
-                                        Tinto Reserva 2015
-                                    </span>
-                                </h4>
-                                <div class="feature-box__side--back-1__details">
-                                    <ul>
-                                        <li><span class="key">Aroma:</span> Elegante e com boa intensidade. Em evidência estão os aromas a lembrar frutos vermelhos
-                                        maduros e ligeiras notas de bosque envolvidas em finas notas provenientes do estágio em madeira que conferem complexidade ao conjunto.</li>
-                                        <li><span class="key">Paladar:</span> Seco e fresco no ataque. Bom volume e estrutura harmonizados pelas notas de frutos vermelhos
-                                        e especiarias a conferir um longo e agradável final.</li>
-                                        
-                                        <li><span class="key">Castas:</span> Tinta-Roriz, Tinta Barroca, Alicante-Bouschet e Touriga Nacional</li>
-                                        
-                                    </ul>
-                                </div>
-                                <div class="feature-box__side--back-1__button">
-                                    <a href="./doc/fichas/Palmeirim_FichaTecnica_TintoRsv2015_PT_a4.pdf" target="_blank" class="btn btn--cor-vinho-tinto">
-                                        Ficha completa
-                                    </a>
-                                </div>
-                            </div> 
-                        </div>
+            <!-- HEAD -->
+                <header class="header">
+                    <div class="header__logo-box">
+                        <img src="img/logo-icon.svg" alt="Logo" class="header__logo">
                     </div>
+                    <div class="header__text-box">
+                        <h1 class="heading-primary">
+                            <span class="heading-primary--main">Palmeirim d´ Inglaterra</span>
+                            <span class="heading-primary--sub">de per si es muy bueno</span>
+                        </h1>
 
-                    <!--BRANCO 2015-->
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <!--Frente-->
-                            <div class="feature-box__side feature-box__side--front">
-                                <h3 class="heading-terciario">
-                                    <span class="heading-terciario--main">Branco</span>
-                                    <span class="heading-terciario--sub">—</span>
-                                    <span class="heading-terciario--subsub">2015</span>
-                                </h3>
-                                <div class="feature-box__btn-box">
-                                    <img src="img/botao-seta.svg" alt="botao" class="feature-box__btn">
+                        <!--<a href="#" class="btn btn--white btn--animated">Descubra os nossos vinhos</a> -->
+                    </div>
+                </header>
+
+
+            <!-- MAIN -->
+                <main>
+                    <!-- HISTORIA -->
+                        <section class="section-historia" id="historia"> 
+                            <div class="row">
+                                <div class="col-1-of-2">              
+                                    <h2 class="heading-secondary u-margin-bottom-medium">
+                                        <span class="heading-secondary--main">Palmeirim d'Inglaterra</span>
+                                        <span class="heading-secondary--sub">História</span>
+                                    </h2>
+                                    <div class="section-historia__text u-center-text">
+                                            
+                                            <!--<iframe src="doc/iframe-historia.html" scrolling="no" class="iframe-historia"></iframe>-->
+                                            <p class="paragraph u-line-height-paragraph-medium">
+                                                    A região vitivinícola de Trás-os-Montes, no nordeste de Portugal, divide-se em três sub-regiões: 
+                                                    Chaves, Valpaços e Planalto Mirandês. Montanhosa, de clima seco, muito quente no verão e muito frio
+                                                    no inverno, é cruzada pelos afluentes e subafluentes do rio Douro. No seus vales profundos perdura
+                                                    a influência mediterrânica, onde, desde o tempo dos romanos, se produzem vinhos afamados.
+                                            </p>
+                                            
+                                            <p class="paragraph u-line-height-paragraph-medium">
+                                                    É nessa sub-região de Chaves, entre os vales do Tâmega e da Ribeira de Oura, nas freguesias de Oura, 
+                                                    Selhariz, Faiões e Vila Verde da Raia, em solos graníticos, com textura arenosa, e noutros de origem 
+                                                    xistosa, que se situam as quintas onde nasceu este vinho. 
+                                
+                                            </p>
+                                            <p class="paragraph u-line-height-paragraph-medium">
+                                                    Os seus actuais proprietários são oriundos de famílias há muito enraizadas nestas terras e 
+                                                    quiseram preservar a memória dos seus ancestrais, produzindo um vinho de qualidade que, articulado 
+                                                    com outras actividades, dignificasse a cultura deste território ímpar. Desta forma, defendem o 
+                                                    património que herdaram e participam no desenvolvimento de uma economia sustentável. 
+                                            </p>
+                                            <p class="paragraph u-line-height-paragraph-medium">
+                                                    As castas são maioritariamente portuguesas. A vindima é efectuada manualmente por casta 
+                                                    e a vinificação é feita em lagar tradicional onde foram efectuadas inovações destinadas 
+                                                    a garantir uma fermentação com controlo de temperatura. Rui Cunha e Sérgio Alves são os 
+                                                    enólogos responsáveis.
+                                            </p>
+                                            <p class="paragraph u-line-height-paragraph-medium">
+                                                    O vinho chama-se PALMEIRIM D’ INGLATERRA, título de um famoso romance de cavalaria do 
+                                                    séc. XVI, escrito pelo transmontano Francisco de Moraes, antepassado comum dos donos 
+                                                    destas quintas. “De por si es muy bueno”, foi assim que Miguel Cervantes descreveu esta 
+                                                    obra em D. Quixote de la Mancha. O rótulo foi desenhado por Augusto Cid. 
+                                            </p>   
+                                            
+                                    </div> 
                                 </div>
-                                <img src="./img/branco-2015-baixa.png" alt="garrafa de branco 2015" class="feature-box__foto">
-                            </div>
-
-                            <!--Trás-->
-                            <div class="feature-box__side feature-box__side--back feature-box__side--back-2">
-                                <h4 class="feature-box__side--back-2__heading">
-                                    <span class="feature-box__side--back-2__heading-span">
-                                        Vinho Branco 2015
-                                    </span>
-                                </h4>
-                                <div class="feature-box__side--back-2__details">
-                                    <ul>
-                                        <li><span class="key">Aroma:</span> Elegante, com boa intensidade e complexidade lembrando no início aromas a frutos citrinos
-                                            , flores brancas seguido de aromas a frutos tropicais maduros. Ligeiras notas minerais conferem delicadeza ao conjunto.</li>
-                                        <li><span class="key">Paladar:</span> Seco, ataque cremoso com uma acidez fina e equilibrada que confere ao 
-                                        vinho uma excelente frescura. Boa estrutura, bom aroma de boca a fruta de caroço madura e aromas florais. Final persistente.
-                                        Vinho com personalidade.</li>
+                                <div class="col-1-of-2">
                                     
-                                        <li><span class="key">Castas:</span> Arinto, Malvasia Fina, Roupeiro, Moscatel Galego Branco.</li>
-                                        
-                                    </ul>
+                                    <img src="img/foto-historia-baixa.png" alt="" class="section-historia__foto">
                                 </div>
-                                <div class="feature-box__side--back-2__button">
-                                    <a href="./doc/fichas/PalmeirimDInglaterra_FichaTec_Branco2015.pdf" target="_blank" class="btn btn--cor-vinho-branco">
-                                        Ficha completa
-                                    </a>
-                                </div>
-                            </div>  
-                        </div>
-                    </div>
-                    <!--BRANCO 2016-->
-                    
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <!--Frente-->
-                            <div class="feature-box__side feature-box__side--front">
-                                    <h3 class="heading-terciario">
-                                            <span class="heading-terciario--main">Branco</span>
-                                        <span class="heading-terciario--sub">—</span>
-                                        <span class="heading-terciario--subsub">2016</span>
-                                    </h3>
-                                    <div class="feature-box__btn-box">
-                                            <img src="img/botao-seta.svg" alt="botao" class="feature-box__btn">
+                            </div>
+                        </section>
+                    <!-- FICHAS TECNICAS -->
+                        <section class="section-fichas-tecnicas" id="section-fichas-tecnicas">
+                            <div class="row">
+                                <!--TINTO RESERVA 2015-->
+                                    <div class="col-1-of-4">
+                                        <div class="feature-box">
+                                            <!--Frente-->
+                                                <div class="feature-box__side feature-box__side--front">
+                                                    <h3 class="heading-terciario">
+                                                        <span class="heading-terciario--main">Tinto</span>
+                                                        <span class="heading-terciario--sub">Reserva</span>
+                                                        <span class="heading-terciario--subsub">2015</span>
+                                                    </h3>
+                                                    <div class="feature-box__btn-box">
+                                                            <img src="img/botao-seta.svg" alt="botao" class="feature-box__btn">
+                                                    </div>
+                                                    <img src="./img/tinto-2015-baixa.png" alt="garrafa de tinto reserva" class="feature-box__foto">
+                                                </div>
+
+                                            <!--Trás-->
+                                                <div class="feature-box__side feature-box__side--back feature-box__side--back-1">
+                                                    <h4 class="feature-box__side--back-1__heading">
+                                                        <span class="feature-box__side--back-1__heading-span">
+                                                            Tinto Reserva 2015
+                                                        </span>
+                                                    </h4>
+                                                    <div class="feature-box__side--back-1__details">
+                                                        <ul>
+                                                            <li><span class="key">Aroma:</span> Elegante e com boa intensidade. Em evidência estão os aromas a lembrar frutos vermelhos
+                                                            maduros e ligeiras notas de bosque envolvidas em finas notas provenientes do estágio em madeira que conferem complexidade ao conjunto.</li>
+                                                            <li><span class="key">Paladar:</span> Seco e fresco no ataque. Bom volume e estrutura harmonizados pelas notas de frutos vermelhos
+                                                            e especiarias a conferir um longo e agradável final.</li>
+                                                            
+                                                            <li><span class="key">Castas:</span> Tinta-Roriz, Tinta Barroca, Alicante-Bouschet e Touriga Nacional</li>
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                    <div class="feature-box__side--back-1__button">
+                                                        <a href="./doc/fichas/Palmeirim_FichaTecnica_TintoRsv2015_PT_a4.pdf" target="_blank" class="btn btn--cor-vinho-tinto">
+                                                            Ficha completa
+                                                        </a>
+                                                    </div>
+                                                </div> 
+                                        </div>
                                     </div>
-                                    <img src="./img/branco-2016-baixa.png" alt="garrafa de branco 2016" class="feature-box__foto">
-                            </div>  
-                        
-                            <!--Trás-->                  
-                            <div class="feature-box__side feature-box__side--back feature-box__side--back-3">
-                                <h4 class="feature-box__side--back-3__heading">
-                                    <span class="feature-box__side--back-3__heading-span">
-                                        Vinho Branco 2016
-                                    </span>
-                                </h4>
-                                <div class="feature-box__side--back-3__details">
-                                    <ul>
-                                        <li><span class="key">Aroma:</span> Elegante, com boa intensidade e complexidade lembrando aromas a frutos citrinos
-                                            como a toranja, flores brancas e frutos tropicais maduros, complementados por leves notas minerais.</li>
-                                        <li><span class="key">Paladar:</span> Seco, ataque cremoso acidez fresca que lhe confere personalidade. Boa estrutura, 
-                                            bom aroma de boca a fruta de caroço madura e aromas florais. Vinho muito gastronómico.</li>
-                                            
-                                        <li><span class="key">Castas:</span> Arinto, Malvasia Fina, Roupeiro, Moscatel Galego Branco.</li>
-                                        
-                                    </ul>
-                                </div>
-                                <div class="feature-box__side--back-3__button">
-                                    <a href="./doc/fichas/PalmeirimDInglaterra_FichaTec_Branco2016.pdf" target="_blank" class="btn btn--cor-vinho-branco">
-                                        Ficha completa
-                                    </a>
-                                </div>
-                            </div>          
-                        </div>
-                    </div>
-                    <!--ROSÉ-->
-                    <!--Frente-->
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <div class="feature-box__side feature-box__side--front">
-                                    <h3 class="heading-terciario">
-                                            <span class="heading-terciario--main">Rosé</span>
-                                            <span class="heading-terciario--sub">—</span>
-                                            <span class="heading-terciario--subsub">2016</span>
-                                        </h3>
-                                        <div class="feature-box__btn-box">
-                                            <img src="img/botao-seta.svg" alt="botao" class="feature-box__btn">
-                                        </div>
-                                        <img src="./img/rose-2016-baixa.png" alt="garrafa de rosé 2016" class="feature-box__foto">
-                            </div>
+                                <!--BRANCO 2015-->
+                                    <div class="col-1-of-4">
+                                        <div class="feature-box">
+                                            <!--Frente-->
+                                            <div class="feature-box__side feature-box__side--front">
+                                                <h3 class="heading-terciario">
+                                                    <span class="heading-terciario--main">Branco</span>
+                                                    <span class="heading-terciario--sub">—</span>
+                                                    <span class="heading-terciario--subsub">2015</span>
+                                                </h3>
+                                                <div class="feature-box__btn-box">
+                                                    <img src="img/botao-seta.svg" alt="botao" class="feature-box__btn">
+                                                </div>
+                                                <img src="./img/branco-2015-baixa.png" alt="garrafa de branco 2015" class="feature-box__foto">
+                                            </div>
 
-                            <!--Trás-->
-                            <div class="feature-box__side feature-box__side--back feature-box__side--back-4">
-                                <h4 class="feature-box__side--back-4__heading">
-                                    <span class="feature-box__side--back-4__heading-span">
-                                        Vinho Rosé 2016
-                                    </span>
-                                </h4>
-                                <div class="feature-box__side--back-4__details">
-                                    <ul>
-                                        <li><span class="key">Aroma:</span> Fino, com boa intensidade, a lembrar aromas a flores e frutos vermelhos como a groselha e a cereja</li>
-                                        <li><span class="key">Paladar:</span> Seco, delicadamente cremoso com acidez fina que lhe confere equilíbrio
-                                        e frescura. Boa estrutura e aroma de boca a lembrar frutos vermelhos. Final persistente e com personalidade.</li>
+                                            <!--Trás-->
+                                            <div class="feature-box__side feature-box__side--back feature-box__side--back-2">
+                                                <h4 class="feature-box__side--back-2__heading">
+                                                    <span class="feature-box__side--back-2__heading-span">
+                                                        Vinho Branco 2015
+                                                    </span>
+                                                </h4>
+                                                <div class="feature-box__side--back-2__details">
+                                                    <ul>
+                                                        <li><span class="key">Aroma:</span> Elegante, com boa intensidade e complexidade lembrando no início aromas a frutos citrinos
+                                                            , flores brancas seguido de aromas a frutos tropicais maduros. Ligeiras notas minerais conferem delicadeza ao conjunto.</li>
+                                                        <li><span class="key">Paladar:</span> Seco, ataque cremoso com uma acidez fina e equilibrada que confere ao 
+                                                        vinho uma excelente frescura. Boa estrutura, bom aroma de boca a fruta de caroço madura e aromas florais. Final persistente.
+                                                        Vinho com personalidade.</li>
+                                                    
+                                                        <li><span class="key">Castas:</span> Arinto, Malvasia Fina, Roupeiro, Moscatel Galego Branco.</li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="feature-box__side--back-2__button">
+                                                    <a href="./doc/fichas/PalmeirimDInglaterra_FichaTec_Branco2015.pdf" target="_blank" class="btn btn--cor-vinho-branco">
+                                                        Ficha completa
+                                                    </a>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                <!--BRANCO 2016-->
+                                    <div class="col-1-of-4">
+                                        <div class="feature-box">
+                                            <!--Frente-->
+                                            <div class="feature-box__side feature-box__side--front">
+                                                    <h3 class="heading-terciario">
+                                                            <span class="heading-terciario--main">Branco</span>
+                                                        <span class="heading-terciario--sub">—</span>
+                                                        <span class="heading-terciario--subsub">2016</span>
+                                                    </h3>
+                                                    <div class="feature-box__btn-box">
+                                                            <img src="img/botao-seta.svg" alt="botao" class="feature-box__btn">
+                                                    </div>
+                                                    <img src="./img/branco-2016-baixa.png" alt="garrafa de branco 2016" class="feature-box__foto">
+                                            </div>  
                                         
-                                        <li><span class="key">Castas:</span> Touriga Nacional, Tinta Roriz e Touriga Franca</li>
-                                        
-                                    </ul>
-                                </div>
-                                <div class="feature-box__side--back-4__button">
-                                    <a href="./doc/fichas/PalmeirimDInglaterra_FichaTec_Rose2016.pdf" target="_blank" class="btn btn--cor-vinho-tinto">
-                                        Ficha completa
-                                    </a>
-                                </div>
+                                            <!--Trás-->                  
+                                            <div class="feature-box__side feature-box__side--back feature-box__side--back-3">
+                                                <h4 class="feature-box__side--back-3__heading">
+                                                    <span class="feature-box__side--back-3__heading-span">
+                                                        Vinho Branco 2016
+                                                    </span>
+                                                </h4>
+                                                <div class="feature-box__side--back-3__details">
+                                                    <ul>
+                                                        <li><span class="key">Aroma:</span> Elegante, com boa intensidade e complexidade lembrando aromas a frutos citrinos
+                                                            como a toranja, flores brancas e frutos tropicais maduros, complementados por leves notas minerais.</li>
+                                                        <li><span class="key">Paladar:</span> Seco, ataque cremoso acidez fresca que lhe confere personalidade. Boa estrutura, 
+                                                            bom aroma de boca a fruta de caroço madura e aromas florais. Vinho muito gastronómico.</li>
+                                                            
+                                                        <li><span class="key">Castas:</span> Arinto, Malvasia Fina, Roupeiro, Moscatel Galego Branco.</li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="feature-box__side--back-3__button">
+                                                    <a href="./doc/fichas/PalmeirimDInglaterra_FichaTec_Branco2016.pdf" target="_blank" class="btn btn--cor-vinho-branco">
+                                                        Ficha completa
+                                                    </a>
+                                                </div>
+                                            </div>          
+                                        </div>
+                                    </div>
+                                <!--ROSÉ-->
+                                    <div class="col-1-of-4">
+                                        <!--Frente-->
+                                        <div class="feature-box">
+                                            <div class="feature-box__side feature-box__side--front">
+                                                    <h3 class="heading-terciario">
+                                                            <span class="heading-terciario--main">Rosé</span>
+                                                            <span class="heading-terciario--sub">—</span>
+                                                            <span class="heading-terciario--subsub">2016</span>
+                                                        </h3>
+                                                        <div class="feature-box__btn-box">
+                                                            <img src="img/botao-seta.svg" alt="botao" class="feature-box__btn">
+                                                        </div>
+                                                        <img src="./img/rose-2016-baixa.png" alt="garrafa de rosé 2016" class="feature-box__foto">
+                                            </div>
+
+                                            <!--Trás-->
+                                            <div class="feature-box__side feature-box__side--back feature-box__side--back-4">
+                                                <h4 class="feature-box__side--back-4__heading">
+                                                    <span class="feature-box__side--back-4__heading-span">
+                                                        Vinho Rosé 2016
+                                                    </span>
+                                                </h4>
+                                                <div class="feature-box__side--back-4__details">
+                                                    <ul>
+                                                        <li><span class="key">Aroma:</span> Fino, com boa intensidade, a lembrar aromas a flores e frutos vermelhos como a groselha e a cereja</li>
+                                                        <li><span class="key">Paladar:</span> Seco, delicadamente cremoso com acidez fina que lhe confere equilíbrio
+                                                        e frescura. Boa estrutura e aroma de boca a lembrar frutos vermelhos. Final persistente e com personalidade.</li>
+                                                        
+                                                        <li><span class="key">Castas:</span> Touriga Nacional, Tinta Roriz e Touriga Franca</li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="feature-box__side--back-4__button">
+                                                    <a href="./doc/fichas/PalmeirimDInglaterra_FichaTec_Rose2016.pdf" target="_blank" class="btn btn--cor-vinho-tinto">
+                                                        Ficha completa
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>
-                        </div>
-                    </div>
-                            
-                </div>
-            </section>
-            <section class="section-guia">
-                <h2 class="heading-secondary-inv u-margin-bottom-big">
-                    <span class="heading-secondary-inv--main">Onde</span>
-                    <span class="heading-secondary-inv--sub">Estamos</span>
-                </h2>
-                <div class="card">
-                        <div class="row">
-                            <div class="col-1-of-3">
-                                <img src="img/foto-ondeCOMPRAR-baixa.jpg" alt="onde comprar" class="card-foto"/>
-                            </div>
-                            <div class="col-2-of-3">
+                            <a href="#popup" class="btn btn--white">
+                                Ver mais
+                            </a>
+                        </section>
+                    <!-- GUIA ONDE...-->
+                        <section class="section-guia">
+                            <h2 class="u-margin-bottom-big heading-secondary-inv">
+                                <span class="heading-secondary-inv--main">Onde</span>
+                                <span class="heading-secondary-inv--sub">Estamos</span>
+                            </h2>
+                            <div class="card">
                                     <div class="row">
-                                            <div class="col-1-of-3">
-                                                <img src="img/arranjo-txt-comprar.png" alt="onde comprar" class="card-foto-titulo"/>
-                                            </div>
-                                            <div class="col-1-of-3">
-                                                <h3 class="card-heading">NORTE</h3>
-                                                <p class="card-local">Chaves</p>
-                                                <p class="card-txt">Garrafeira Stop, Vinoteca de Chaves, E.Leclerc Chaves, Prazeres da Terra</p>
-                                                <p class="card-local">Amares</p>
-                                                <p class="card-txt">Encostas de Amares</p>
-                                                <p class="card-local">Porto</p>
-                                                <p class="card-txt">Berrys (Fernando Barbedo), Augusto, Confeitaria Primazia, Gota-a-Gota WineHouse , Akihácarne, Mariscos da Foz, Sala de Provas Vinhos de Portugal</p>
-                                                <!--<p>Winsbergring 22<br/>
-                                                    D- 22525 HAMBURG<br/>
-                                                    Tel: 00 49 40 853 160<br/>
-                                                    Fax: 00 49 40 858 500
-                                                    <span class="email">export@borco.com</span><br/>
-                                                    <span class="web">www.borco.com</span><br/>
-                                                </p>-->
-                                            </div>
-                                            <div class="col-1-of-3">
-                                                <p class="card-local">Matosinhos</p>
-                                                <p class="card-txt">Garage Wines</p>
-                                                <h3 class="card-heading">CENTRO</h3>
-                                                <p class="card-local">Lisboa</p>
-                                                <p class="card-txt">Alfama Life, Prazeres da Terra,  Estado d’Alma , 
-                                                        Mercearia Qualisuper,Banca de Pau, 
-                                                        Rota do Sul, Living wine, D&D arte de degustar, Sala de Provas Vinhos de Portugal, Mercado de Campo de Ourique</p>
-                                                <h3 class="card-heading">SUL</h3>
-                                                <p class="card-local">Portimão</p>
-                                                <p class="card-txt">Algarve  Wineshop</p>
-                                            
-                                                
-                                            </div>
+                                        <div class="col-1-of-3">
+                                            <img src="img/foto-ondeCOMPRAR-baixa_tablet.jpg" alt="onde comprar" class="card-foto"/>
                                         </div>
+                                        <div class="col-2-of-3">
+                                                <div class="row">
+                                                        <div class="col-1-of-3">
+                                                            <img src="img/arranjo-txt-comprar.png" alt="onde comprar" class="card-foto-titulo"/>
+                                                        </div>
+                                                        <div class="col-1-of-3">
+                                                            <h3 class="card-heading">NORTE</h3>
+                                                            <p class="card-local">Chaves</p>
+                                                            <p class="card-txt">Garrafeira Stop, Vinoteca de Chaves, E.Leclerc Chaves, Prazeres da Terra</p>
+                                                            <p class="card-local">Amares</p>
+                                                            <p class="card-txt">Encostas de Amares</p>
+                                                            <p class="card-local">Porto</p>
+                                                            <p class="card-txt">Berrys (Fernando Barbedo), Augusto, Confeitaria Primazia, Gota-a-Gota WineHouse , Akihácarne, Mariscos da Foz, Sala de Provas Vinhos de Portugal</p>
+                                                            <!--<p>Winsbergring 22<br/>
+                                                                D- 22525 HAMBURG<br/>
+                                                                Tel: 00 49 40 853 160<br/>
+                                                                Fax: 00 49 40 858 500
+                                                                <span class="email">export@borco.com</span><br/>
+                                                                <span class="web">www.borco.com</span><br/>
+                                                            </p>-->
+                                                        </div>
+                                                        <div class="col-1-of-3">
+                                                            <p class="card-local">Matosinhos</p>
+                                                            <p class="card-txt">Garage Wines</p>
+                                                            <h3 class="card-heading">CENTRO</h3>
+                                                            <p class="card-local">Lisboa</p>
+                                                            <p class="card-txt">Alfama Life, Prazeres da Terra,  Estado d’Alma , 
+                                                                    Mercearia Qualisuper,Banca de Pau, 
+                                                                    Rota do Sul, Living wine, D&D arte de degustar, Sala de Provas Vinhos de Portugal, Mercado de Campo de Ourique</p>
+                                                            <h3 class="card-heading">SUL</h3>
+                                                            <p class="card-local">Portimão</p>
+                                                            <p class="card-txt">Algarve  Wineshop</p>
+                                                        
+                                                            
+                                                        </div>
+                                                    </div>
+                                        </div>
+                                    </div>
                             </div>
-                        </div>
-                </div>
 
-                <div class="card">
-                    <div class="row">
-                        <div class="col-1-of-3">
-                            <img src="img/foto-ondeBEBER-baixa.jpg" alt="onde comprar" class="card-foto"/>
-                        </div>
-                        <div class="col-2-of-3">
+                            <div class="card">
                                 <div class="row">
                                     <div class="col-1-of-3">
-                                        <img src="img/arranjo-txt-beber.png" alt="onde beber" class="u-margin-top-super card-foto-titulo"/>
+                                        <img src="img/foto-ondeBEBER-baixa_tablet.jpg" alt="onde comprar" class="card-foto"/>
                                     </div>
-                                    <div class="col-1-of-3">
-                                            <h3 class="card-heading">NORTE</h3>
-                                            <p class="card-local">Chaves</p>
-                                            <p class="card-txt">Adega Faustino, Alquimia Wine Bar, Carvalho, Hotel Forte São Francisco , O Lavrador, Quinta da Mata, Taberna Benito</p>
-                                            
-                                            <p class="card-local">Vidago</p>
-                                            <p class="card-txt">Quinta dos Carvalhos, Resineiro, Vidago Palace, Pizzaria Fernando, Primavera Perfume Hotel</p>
-                                            
-                                            <p class="card-local">Mirandela</p>
-                                            <p class="card-txt">Flor de Sal</p>
+                                    <div class="col-2-of-3">
+                                            <div class="row">
+                                                <div class="col-1-of-3">
+                                                    <img src="img/arranjo-txt-beber.png" alt="onde beber" class="u-margin-top-super card-foto-titulo"/>
+                                                </div>
+                                                <div class="col-1-of-3">
+                                                        <h3 class="card-heading">NORTE</h3>
+                                                        <p class="card-local">Chaves</p>
+                                                        <p class="card-txt">Adega Faustino, Alquimia Wine Bar, Carvalho, Hotel Forte São Francisco , O Lavrador, Quinta da Mata, Taberna Benito</p>
+                                                        
+                                                        <p class="card-local">Vidago</p>
+                                                        <p class="card-txt">Quinta dos Carvalhos, Resineiro, Vidago Palace, Pizzaria Fernando, Primavera Perfume Hotel</p>
+                                                        
+                                                        <p class="card-local">Mirandela</p>
+                                                        <p class="card-txt">Flor de Sal</p>
 
-                                            <p class="card-local">Porto</p>
-                                            <p class="card-txt">Club Portuense, Cêpa Torta (Srª da Luz e R. Gondarém), Tasca do Bairro, Cozinha da Amélia</p>
+                                                        <p class="card-local">Porto</p>
+                                                        <p class="card-txt">Club Portuense, Cêpa Torta (Srª da Luz e R. Gondarém), Tasca do Bairro, Cozinha da Amélia</p>
 
-                                            <h3 class="card-heading">CENTRO</h3>
-                                            <p class="card-local">Cascais</p>
-                                            <p class="card-txt">Mercearia d’Aldeia (Aldeia de Juzo) </p>
+                                                        <h3 class="card-heading">CENTRO</h3>
+                                                        <p class="card-local">Cascais</p>
+                                                        <p class="card-txt">Mercearia d’Aldeia (Aldeia de Juzo) </p>
 
 
+                                                </div>
+                                                <div class="col-1-of-3">
+                                                        
+                                                        <p class="card-local">Lisboa</p>
+                                                        <p class="card-txt">Avelar & Teixeira, CCB, Dom Feijão, Bom de Veras, Descobre, Via 14, Acácias, Ordem dos Engenheiros, O Magano, Pap’Açorda, 100 Maneiras, Jockey Campo Grande, Casa do Vinho, Casa do Vinho (Areeiro), Santory, Pão à mesa, Cais na Preguiça, Decadente, Sommelier, Terraço do Marquês</p>
+                                                        
+                                                        <p class="card-local">Costa da Caparica</p>
+                                                        <p class="card-txt">Pata Roxa </p>
+
+                                                        <p class="card-local">Oeiras</p>
+                                                        <p class="card-txt">Taberna Oporto</p>
+
+                                                        <p class="card-local">Fonte da Telha </p>
+                                                        <p class="card-txt">Beira Mar</p>
+
+                                                        <p class="card-local">Montijo</p>
+                                                        <p class="card-txt">O Primo Chico</p>
+
+                                                        <p class="card-local">Aroeira</p>
+                                                        <p class="card-txt">Golf Market</p>
+
+                                                        <p class="card-local">Óbidos</p>
+                                                        <p class="card-txt">Em Banho Maria</p>
+                                                </div>
+                                            </div>
                                     </div>
-                                    <div class="col-1-of-3">
-                                            
-                                            <p class="card-local">Lisboa</p>
-                                            <p class="card-txt">Avelar & Teixeira, CCB, Dom Feijão, Bom de Veras, Descobre, Via 14, Acácias, Ordem dos Engenheiros, O Magano, Pap’Açorda, 100 Maneiras, Jockey Campo Grande, Casa do Vinho, Casa do Vinho (Areeiro), Santory, Pão à mesa, Cais na Preguiça, Decadente, Sommelier, Terraço do Marquês</p>
-                                            
-                                            <p class="card-local">Costa da Caparica</p>
-                                            <p class="card-txt">Pata Roxa </p>
-
-                                            <p class="card-local">Oeiras</p>
-                                            <p class="card-txt">Taberna Oporto</p>
-
-                                            <p class="card-local">Fonte da Telha </p>
-                                            <p class="card-txt">Beira Mar</p>
-
-                                            <p class="card-local">Montijo</p>
-                                            <p class="card-txt">O Primo Chico</p>
-
-                                            <p class="card-local">Aroeira</p>
-                                            <p class="card-txt">Golf Market</p>
-
-                                            <p class="card-local">Óbidos</p>
-                                            <p class="card-txt">Em Banho Maria</p>
+                                </div>           
+                        </section>
+                    <!-- EQUIPA -->
+                        <section class="section-equipa">
+                            <h2 class="heading-secondary-inv u-margin-bottom-big">
+                                <span class="heading-secondary-inv--main">Quem</span>
+                                <span class="heading-secondary-inv--sub">Somos</span>
+                            </h2>
+                            <div class="row">
+                                <div class="col-1-of-3">
+                                    <div class="socio">
+                                        <img src="img/foto-socio-isabel-sarmento_tablet.png" alt="foto isabel sarmento" class="socio-foto"/>
+                                        <div class="socio-dados">
+                                            <h3 class="socio-dados--nome card-heading">Isabel Sarmento</h3>
+                                            <span class="socio-dados--cargo">Proprietário</span>
+                                        </div>
                                     </div>
                                 </div>
-                        </div>
-                    </div>           
-            </section>
-            <section class="section-equipa">
-                <h2 class="heading-secondary-inv u-margin-bottom-big">
-                    <span class="heading-secondary-inv--main">Quem</span>
-                    <span class="heading-secondary-inv--sub">Somos</span>
-                </h2>
-                <div class="row">
-                    <div class="col-1-of-3">
-                        <div class="socio">
-                            <img src="img/foto-socio-isabel-sarmento.png" alt="foto isabel sarmento" class="socio-foto"/>
-                            <div class="socio-dados">
-                                <h3 class="socio-dados--nome card-heading">Isabel Sarmento</h3>
-                                <span class="socio-dados--cargo">Proprietário</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1-of-3">
-                        <div class="socio">
-                            <img src="img/foto-socio-joao-sarmento.png" alt="foto joao sarmento" class="socio-foto"/>
-                            <div class="socio-dados">
-                                <h3 class="socio-dados--nome card-heading">João Morais Sarmento</h3>
-                                <span class="socio-dados--cargo">Proprietário</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1-of-3">
-                        <div class="socio">
-                            <img src="img/foto-socio-ricardo-fernandes.png" alt="foto ricardo fernandes" class="socio-foto"/>
-                            <div class="socio-dados">
-                                <h3 class="socio-dados--nome card-heading">Ricardo Sá Fernandes</h3>
-                                <span class="socio-dados--cargo">Proprietário</span>
-                            </div>
-                        </div>   
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="row">
-                        <div class="col-1-of-2">
-                            <div class="socio socio--1">
-                                <img src="img/foto-enologo-rui-cunha.png" alt="foto rui cunha" class="socio-foto"/>
-                                <div class="socio-dados">
-                                    <h3 class="socio-dados--nome card-heading">Rui Cunha</h3>
-                                    <span class="socio-dados--cargo">Enólogo</span>
+                                <div class="col-1-of-3">
+                                    <div class="socio">
+                                        <img src="img/foto-socio-joao-sarmento_tablet.png" alt="foto joao sarmento" class="socio-foto"/>
+                                        <div class="socio-dados">
+                                            <h3 class="socio-dados--nome card-heading">João Morais Sarmento</h3>
+                                            <span class="socio-dados--cargo">Proprietário</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1-of-3">
+                                    <div class="socio">
+                                        <img src="img/foto-socio-ricardo-fernandes_tablet.png" alt="foto ricardo fernandes" class="socio-foto"/>
+                                        <div class="socio-dados">
+                                            <h3 class="socio-dados--nome card-heading">Ricardo Sá Fernandes</h3>
+                                            <span class="socio-dados--cargo">Proprietário</span>
+                                        </div>
+                                    </div>   
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-1-of-2">
-                            <div class="socio socio--2">
-                                <img src="img/foto-enologo-rui-cunha.png" alt="foto sergio alves" class="socio-foto"/>
-                                <div class="socio-dados">
-                                    <h3 class="socio-dados--nome card-heading">Sérgio Alves</h3>
-                                    <span class="socio-dados--cargo">Enólogo</span>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-1-of-2">
+                                        <div class="socio socio--1">
+                                            <img src="img/foto-enologo-rui-cunha_tablet.png" alt="foto rui cunha" class="socio-foto"/>
+                                            <div class="socio-dados">
+                                                <h3 class="socio-dados--nome card-heading">Rui Cunha</h3>
+                                                <span class="socio-dados--cargo">Enólogo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1-of-2">
+                                        <div class="socio socio--2">
+                                            <img src="img/foto-enologo-sergio_tablet.png" alt="foto sergio alves" class="socio-foto"/>
+                                            <div class="socio-dados">
+                                                <h3 class="socio-dados--nome card-heading">Sérgio Alves</h3>
+                                                <span class="socio-dados--cargo">Enólogo</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-quintas">
-                    <div class="section-quintas-titulo-main">
-                            <img src="img/arranjo-txt-quintas.png" alt="" class="section-quintas-titulo-main__foto">
-                    </div>
-            </section>
-            <section class="section-mensagens">
-                <div class="section-mensagens-titulo-main">
-                        <img src="img/arranjo-txt-coment.png" alt="" class="section-mensagens-titulo-main__foto">
-                </div>
-                <div class="row">
-                    <div class="col-1-of-2">    
-                        <div class="coluna-mensagens">
-                            <div class="coluna-mensagens-titulo">Branco 2016</div>
-                            <div class="coluna-mensagens-texto">
-                                    (89) “A altitude, a natureza dos solos e do clima mais fresco de Trás-os-Montes (se comparado com o Douro, claro) estão bem expressos na natureza deste vinho. Vinificado pela dupla de enólogos Rui Cunha (uma espécie de rei Midas dos vinhos do norte) e de Sérgio Alves, este branco exprime aromas intensos e atraentes, mas é pelo lado da sua garra na boca, resultante da sua acidez, que melhor se afirma. Um branco com carácter, que vale a pena conhecer”.    
-                            <span class="coluna-mensagens-autor">(Manuel Carvalho, Público, 30.9.2017)</span>                            
-                        </div>
+                        </section>
+                    <!-- QUINTAS -->
+                        <section class="section-quintas">
+                                <div class="section-quintas-titulo-main">
+                                        <img src="img/arranjo-txt-quintas.png" alt="" class="section-quintas-titulo-main__foto">
+                                </div>
+                                <div class="section-quintas-fotos">
+                                    <div class="row">
+                                        <div class="col-1-of-3">
+                                            <img src="img/Casa-Oura-02_tablet.jpg" alt="" class="section-quintas-fotos--1">      
+                                        </div>
+                                        <div class="col-1-of-3">
+                                            <img src="img/Casa-Selhariz-02_1_tablet.jpg" alt="" class="section-quintas-fotos--2">
+                                        </div>
+                                        <div class="col-1-of-3">
+                                            <img src="img/Casa-Faioes-01_tablet.jpg" alt="" class="section-quintas-fotos--3">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-2-of-3">
+                                            <img src="img/vinha-1_tablet.jpg" alt="" class="section-quintas-fotos--4"> 
+                                        </div>
+                                        <div class="col-1-of-3">
+                                            <div class="row">
+                                                    <img src="img/adega_1_tablet.jpg" alt="" class="section-quintas-fotos--5">     
+                                            </div>
+                                            <div class="row">
+                                                    <img src="img/quintas-imagem-logo.png" alt="" class="section-quintas-fotos--6">     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             
-                        <div class="coluna-mensagens-texto">
-                                (16) “Feito com 4 castas, mostra-se muito bem no aroma, finos nas notas de fruta, aqui com mais evidência de vegetal seco, indo até uma leve sensação mineral. Muito bem também na boca, com frescura suscitada pela acidez, o que lhe confere boa aptidão gastronómica. A explicação do nome vem no rótulo”
-                            <span class="coluna-mensagens-autor">(João Paulo Martins, Vinhos de Portugal 2018, Oficina do Livro, 2017)</span>
-                        </div>
-                        <div class="coluna-mensagens-titulo">Branco 2015</div>
-                        <div class="coluna-mensagens-texto">
-                                (85, 3 corações, “vinho de emoção”) “Lote com Arinto. Cor média citrina. Ananás, nota seivosa entre terrosos minerais e alguma hortelã. Denso, conversador, sem desmaios. Gastronómico. Excelente relação qualidade-preço”.
-
-                            <span class="coluna-mensagens-autor">(Guia Popular de Vinhos 2017, Aníbal José Coutinho com Neil Pendock, Editorial Presença, 2016)</span>                            
-                        </div>
-                    </div>
-                                
-                </div>
-                    <div class="col-1-of-2">
-                        <div class="coluna-mensagens">
-                            <div class="coluna-mensagens-titulo">Branco 2014</div>
-                                <div class="coluna-mensagens-texto">
-                                        (3 corações, “vinho de emoção”) “Lote com Arinto. Cor clara citrina. Madeira abaunilhada, nata com casca cítrica e pêssego. Cativante. Amplo, redondo.. fresco, muito consensual. Compra segura”.
+                        </section>
+                    <!-- MENSAGENS -->
+                        <section class="section-mensagens">
+                            <div class="section-mensagens-titulo-main">
+                                    <img src="img/arranjo-txt-coment.png" alt="" class="section-mensagens-titulo-main__foto">
+                            </div>
+                            <!-- ZONA DE NOTAS DE PROVA -->
+                            <div class="row">
+                                <!-- COLUNA DA ESQUERDA --> 
+                                <div class="col-1-of-2">    
+                                    <div class="coluna-mensagens"> 
+                                        <div class="coluna-mensagens-titulo">
+                                            Branco 2016 | Medalha de Ouro, Catavinum World Wine & Spirits Competitions – Spain 2018
+                                        </div>
+                                        <div class="coluna-mensagens-texto">
+                                                (89) “A altitude, a natureza dos solos e do clima mais fresco de Trás-os-Montes (se comparado com o Douro, claro) estão bem expressos na natureza deste vinho. Vinificado pela dupla de enólogos Rui Cunha (uma espécie de rei Midas dos vinhos do norte) e de Sérgio Alves, este branco exprime aromas intensos e atraentes, mas é pelo lado da sua garra na boca, resultante da sua acidez, que melhor se afirma. Um branco com carácter, que vale a pena conhecer”.    
+                                            <span class="coluna-mensagens-autor">(Manuel Carvalho, Público, 30.9.2017)</span>                            
+                                        </div>
                                         
-            
-                                    <span class="coluna-mensagens-autor">(Guia Popular de Vinhos 2017, Aníbal José Coutinho, Editorial Presença, 2015)   </span>                            
+                                        <div class="coluna-mensagens-texto">
+                                            (16) “Feito com 4 castas, mostra-se muito bem no aroma, finos nas notas de fruta, aqui com mais evidência de vegetal seco, indo até uma leve sensação mineral. Muito bem também na boca, com frescura suscitada pela acidez, o que lhe confere boa aptidão gastronómica. A explicação do nome vem no rótulo”
+                                            <span class="coluna-mensagens-autor">(João Paulo Martins, Vinhos de Portugal 2018, Oficina do Livro, 2017)</span>
+                                        </div>
+                                        <div class="coluna-mensagens-titulo">Rosé 2016</div>
+                                        <div class="coluna-mensagens-texto">
+                                                15 Lote de 3 castas. Salmonado na cor, com algum peso aromático onde leves notas de groselha se associam com dores, com boa prestação na boca, o vinho tem volume e boa acidez mas pode ser mais aconselhável para a mesa do que para a esplanada. Saladas e massas estão à espera dele.
+                                            <span class="coluna-mensagens-autor">(João Paulo Martins, Vinhos de Portugal 2018)</span>                            
+                                        </div>
+                                    </div>                   
                                 </div>
+                                <!-- COLUNA DA DIREITA -->
+                                <div class="col-1-of-2">
+                                    <div class="coluna-mensagens">
+                                            <div class="coluna-mensagens-titulo">Branco 2015</div>
+                                            <div class="coluna-mensagens-texto">
+                                                (85, 3 corações, “vinho de emoção”) “Lote com Arinto. Cor média citrina. Ananás, nota seivosa entre terrosos minerais e alguma hortelã. Denso, conversador, sem desmaios. Gastronómico. Excelente relação qualidade-preço”.
+                
+                                                <span class="coluna-mensagens-autor">(Guia Popular de Vinhos 2017, Aníbal José Coutinho com Neil Pendock, Editorial Presença, 2016)</span>                            
+                                            </div>
+                                        <div class="coluna-mensagens-titulo">Branco 2014</div>
+                                        <div class="coluna-mensagens-texto">
+                                            (3 corações, “vinho de emoção”) “Lote com Arinto. Cor clara citrina. Madeira abaunilhada, nata com casca cítrica e pêssego. Cativante. Amplo, redondo.. fresco, muito consensual. Compra segura”.
+                                            <span class="coluna-mensagens-autor">(Guia Popular de Vinhos 2017, Aníbal José Coutinho, Editorial Presença, 2015)   </span>                            
+                                        </div>
+                                        <div class="coluna-mensagens-texto">
+                                                    (16) “Feito com 4 castas, mostra-se muito bem no aroma, finos nas notas de fruta, aqui ao lado de algum vegetal seco, indo até uma leve sensação mineral. Muito bem também na boca, com frescura e com um estilo de muita proporção  entre as várias componentes. Sempre uma boa aposta. A explicação do nome vem no rótulo”
+                                                    (João Paulo Martins, Vinhos de Portugal 2016, Oficina do Livro, 2015)
+                                            <span class="coluna-mensagens-autor">(João Paulo Martins, Vinhos de Portugal 2016, Oficina do Livro, 2015)</span>                            
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
 
-                                <div class="coluna-mensagens-texto">
-                                        (16) “Feito com 4 castas, mostra-se muito bem no aroma, finos nas notas de fruta, aqui ao lado de algum vegetal seco, indo até uma leve sensação mineral. Muito bem também na boca, com frescura e com um estilo de muita proporção  entre as várias componentes. Sempre uma boa aposta. A explicação do nome vem no rótulo”
-                                        (João Paulo Martins, Vinhos de Portugal 2016, Oficina do Livro, 2015)
-                            <span class="coluna-mensagens-autor">(João Paulo Martins, Vinhos de Portugal 2016, Oficina do Livro, 2015)</span>                            
+                        </section>  
+                </main>
+            <!-- FOOTER -->
+                <footer class="footer">
+                    <div class="footer__logo-box">
+                        <img src="img/logo-icon.svg" alt="Logo" class="footer__logo">
+                    </div>
+                    <div class="row">
+                        <div class="footer__contacts">
+                            <div class="col-1-of-3">
+                                <a class="footer__contact-item footer__link" href="mailto:palmeirimdeinglaterra@gmail.com?body=%0A%0AEnviado%20do%20site">
+                                    <img src="img/botao-email.svg" alt="" class="footer__contact-item--icon">
+                                    <span class="footer__contact-item--text">palmeirimdeinglaterra@gmail.com</span>
+                                </a>
+                            </div>
+                            <div class="col-1-of-3">
+                                <div class="footer__contact-item">
+                                    <img src="img/botao-telefone.svg" alt="" class="footer__contact-item--icon">
+                                    <span class="footer__contact-item--text">966 921 860&nbsp;/&nbsp;917 611 981</span>
+                                </div>
+                            </div>
+                            <div class="col-1-of-3">
+                                <a href="https://www.facebook.com/PalmeirimDOCTrasOsMontes/" target="_blank" class="footer__contact-item footer__link">
+                                    <img src="img/botao-facebook.svg" alt="" class="footer__contact-item--icon">
+                                    <span class="footer__contact-item--text">siga-nos</span>
+                                </a>
+                            </div>   
                         </div>
-                        </div>  
+                    </div>  
+                    <div class="row">
+                        <div class="col-1-of-3">
+                                &nbsp;
+                            <div class="footer__navigation">
+                                <!--
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a href="" class="footer__link">Cenas</a></li>
+                                    <li class="footer__item"><a href="" class="footer__link">Cenas</a></li>
+                                    <li class="footer__item"><a href="" class="footer__link">Cenas</a></li>
+                                    <li class="footer__item"><a href="" class="footer__link">Cenas</a></li>
+                                    <li class="footer__item"><a href="" class="footer__link">Cenas</a></li>
+                                </ul>-->
+                            </div>
+                        </div>
+                        <div class="col-1-of-3">
+                            <p class="footer__copyright">
+                                Design and built by Druidas, with special thanks to <a href="https://codingheroes.io/" target="_blank" class="footer__link">Jonas Schmedmann</a>.
+                            </p>
+                        </div>
+                        <div class="col-1-of-3">
+                        &nbsp;
+                        </div>
                     </div>
-                </div>
+                </footer>
+        </div>
 
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__logo-box">
-                <img src="img/logo-icon.svg" alt="Logo" class="footer__logo">
-            </div>  
-            <div class="footer__text-box">
-                <div class="footer__text-box__contacts">
-                    <div class="footer__text-box__contacts__email">
-                        <img src="img/botao-email.svg" alt="" class="footer__text-box__contacts__email--icon">
-                        <span class="footer__text-box__contacts__email--text">palmeirimdeinglaterra@gmail.com</span>
-                    </div>
-                    <div class="footer__text-box__contacts__telefone">
-                        <img src="img/botao-telefone.svg" alt="" class="footer__text-box__contacts__telefone--icon">
-                        <span class="footer__text-box__contacts__telefone--text">966 921 860</span>
-                    </div>
-                    <div class="footer__text-box__contacts__facebook">
-                        <a href="https://www.facebook.com/PalmeirimDOCTrasOsMontes/" target="_blank" >
-                            <img src="img/botao-facebook.svg" alt="" class="footer__text-box__contacts__facebook--icon">
-                            <span class="footer__text-box__contacts__facebook--text">siga-nos</span> 
-                        </a>
-                    </div>
-                </div>
-            </div>     
-        </footer>
-    </div>
+    <!-- POPUP -->
+        <div class="popup" id="popup">
+            
+            <div class="popup__content">
+                <a href="#section-fichas-tecnicas" class="popup__close">&times;</a>   
+                POPUP
+            </div>
+        </div>
  
-   <!--
-    <section class="grid-test">
-        <div class="row">
-            <div class="col-1-of-2">
-                Col 1 of 2
+   
+   
+   
+   
+   
+   
+   
+<!-- DUMMY GRID -->
+    <!--
+        <section class="grid-test">
+            <div class="row">
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
             </div>
-            <div class="col-1-of-2">
-                Col 1 of 2
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-1-of-3">
-                Col 1 of 3
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
             </div>
-            <div class="col-1-of-3">
-                Col 1 of 3
-            </div>
-            <div class="col-1-of-3">
-                Col 1 of 3
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-1-of-3">
-                Col 1 of 3
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-2-of-3">
+                    Col 2 of 3
+                </div>
             </div>
-            <div class="col-2-of-3">
-                Col 2 of 3
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-1-of-4">
-                Col 1 of 4
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
             </div>
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-1-of-4">
-                Col 1 of 4
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-2-of-4">
+                    Col 2 of 4
+                </div>
             </div>
-            <div class="col-1-of-4">
-                Col 1 of 4
-            </div>
-            <div class="col-2-of-4">
-                Col 2 of 4
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-1-of-4">
-                Col 1 of 4
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-3-of-4">
+                    Col 3 of 4
             </div>
-            <div class="col-3-of-4">
-                Col 3 of 4
-        </div>
 
-        
-    </section>
--->
+            
+        </section>
+    -->
 
     </body>
 </html>

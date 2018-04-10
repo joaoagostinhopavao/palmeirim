@@ -1,110 +1,131 @@
-//footer
-
-
 .footer{
-    height: 80vh;
-    margin-top:-15rem;
-    background-image: linear-gradient(
+  margin-top:-30vh;
+  background-image: linear-gradient(
                     to top left,
                     rgba($cor-primaria-claro,1),
                     rgba($cor-primaria-escuro,1)),
                     url(../img/banner-principal-Baixo.jpg);
-    background-size: cover;
-    background-position: top;
-    position:relative;
+  background-size: cover;
+  background-position: top;
+// Recorte
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
+  -moz-clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
+  clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
+  padding: 10rem 0;
+
+  @include respond(tab-port){
+    padding: 3rem 0;
+    margin-top:-25vh;
+
+    -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 85vh,0 95vh);
+    -moz-clip-path: polygon(0 20vh, 100% 0, 100% 105vh,0 135vh);
     clip-path: polygon(0 20vh, 100% 0, 100% 105vh,0 135vh);
-    -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 105vh,0 135vh);
-  
-    &__logo-box{
-      position:absolute;
-      top: 50%;
-      left: 50%;
-      transform:translate(-50%,-50%);
-    } 
-  
-    &__logo{
-      height: 13rem;
-    }
-
-    &__text-box{
-      position:absolute;
-      width:60%;
-      border-top:1px solid $cor-branca;
-      top:60%;
-      left:50%;
-      color:$cor-branca;
-      margin-top:3rem;
-      transform:translateX(-50%);
-
-      &__contacts{
-        //border:1px solid yellow;
-        position:relative;
-        
-      
-        
-        &__email{
-          
-          width:40%;
-          
-          text-transform: lowercase;
-
-          position:absolute;
-          left:9rem;
-          top:2rem;
-          width:30%;
-          &--icon{
-            width:4rem;
-            margin-right: 1rem;
-          }
-          &--text{
-            position:absolute;
-            top:0.8rem;
-          }
-        }
-
-        &__telefone{
-          position:absolute;
-          left:41rem;
-          top:2rem;
-          width:30%;
-          
-          text-transform: lowercase;
-
-          &--icon{
-            width:4rem;
-            margin-right: 1rem;
-          }
-          &--text{
-            position:absolute;
-            top:0.8rem;
-          }
-        }
-
-        &__facebook{
-          position:absolute;
-          left:58rem;
-          top:2rem;
-         
-          width:30%;
-          text-transform: lowercase;
-
-          &--icon{
-            width:4rem;
-            margin-right: 1rem;
-          }
-          &--text{
-            position:absolute;
-            top:0.8rem;
-            color:white;
-            text-decoration:none;
-          }
-        }
-      
-    }
-  
   }
 
-  
-        
-        
+
+
+  //Subelementos
+  &__logo-box{
+    text-align: center;
+    margin-bottom: 8rem;
+
+    @include respond(tab-port){
+      margin-bottom: 4rem;
+      margin-top:10rem;
+    }
+  } 
+  &__logo{
+      width:15rem;
+      height: auto;
+
+      @include respond(tab-port){
+        width:10rem;
       }
+  }
+  &__navigation{
+    border:none;
+
+    .col-1-of-3{ 
+      @include respond(tab-port){
+        margin-bottom:1.5rem !important;
+      }
+
+      @include respond(phone){
+        margin-bottom:1rem !important;
+      }
+    }
+  }
+
+  &__contacts{
+    height: 1rem;
+    border-top: 1px solid $cor-cinza-claro-1;
+    
+    .col-1-of-3{
+      @include respond(tab-port){
+        margin-bottom:1.5rem !important;
+      }
+
+      @include respond(phone){
+        margin-bottom:1rem !important;
+      }
+    }
+  
+
+  }
+  &__contact-item{
+    color:white;
+    position:relative;
+    margin-top:1.5rem;
+    display:inline-block;
+    &--icon{
+      width:4rem;
+
+      @include respond(tab-port){
+        width:3rem;
+      }
+
+    }
+    &--text {
+      white-space: nowrap;
+      margin-left:6rem;
+      text-align:left;
+      position:absolute;
+      top:0.8rem; 
+      @include respond(tab-port){
+        top:0.6rem;
+        margin-left:4rem;
+      }  
+    }
+
+  }
+
+  &__copyright{
+    color:$cor-cinza-claro-1;
+    width:80%; 
+    float: right;
+  }
+  &__list{
+    list-style-type: none;
+  }
+  &__item{
+    display:inline-block;
+    &:not(::last-child){
+      margin-right:1.5rem;
+    }
+  }
+  &__link{
+    &:link,
+    &:visited{
+      color:$cor-cinza-claro-1;
+      text-decoration:none;
+      text-transform:uppercase;
+      display:inline-block;
+    }
+    &:hover,
+    &:active{
+      color:$cor-secundaria-claro;
+      box-shadow:0 1rem 2rem rgba($cor-preta,0.4);
+      transform:scale(1.3);
+    }
+  }
+}

@@ -1,9 +1,6 @@
 .socio{
-
-    //border: 1px solid blue;
     
     &-foto{
-        
         display:block;
         width:25rem;
         margin:0 auto;
@@ -16,5 +13,22 @@
         &--cargo{
             display:block;
         }
+    }
+
+    &--1{
+        float: right;
+        margin-right: 8rem;
+        @include respond(tab-land){float:none; }
+        @include respond(tab-port){float:none;  margin:0;}
+        @include respond(phone){float:none;  margin:0;}
+    }
+    &--2{
+        
+        float: left;
+        margin-left:3rem;
+
+        @include respond(tab-land){float:none; }
+        @include respond(tab-port){float:none;  margin:0;}
+        @include respond(phone){float:none;  margin:0;}
     }
 } 

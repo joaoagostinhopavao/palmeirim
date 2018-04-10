@@ -1,0 +1,25 @@
+.section-quintas{
+    &-titulo-main{
+      margin-bottom:5rem;
+      &__foto{    
+        display:block;
+        margin:0 auto;
+        width:38rem;
+      }
+    }
+    &-fotos{
+      &--1{display:block;width:100%;}
+      &--2{display:block;width:100%;}
+      &--3{display:block;width:100%;}
+      &--4{display:block;width:100%;}
+      &--5{display:block;width:100%;}
+        /*img{
+            display:block;
+            width:100%;
+          }*/
+      &--6{
+        margin-top:8rem;
+      }
+  
+    }
+  }

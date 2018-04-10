@@ -4,9 +4,43 @@
     padding:6rem 3rem 3rem 3rem;
     box-shadow: 0 1.5rem 4rem rgba($cor-preta,.25);
 
+    @include respond(phone){
+        margin: 3rem 6rem 0 6rem;
+        padding:6rem 3rem 3rem 3rem; 
+      }
+
     &-foto{
         width:40rem;
         margin-left: -8rem;
+
+        @include respond(tab-port){
+            margin-top:0;
+        }
+        @include respond(phone){
+            width: 25rem;
+            margin-left: -5rem;
+        } 
     }
+
+    &-foto-titulo{
+        @include respond(tab-port){
+            width: 15rem;
+            margin-top:0;
+        }
+        @include respond(phone){
+            width: 15rem;
+            margin-top:0;
+        }
+    }
+
+    &-txt{
+        @include respond(phone){
+            font-size: $default-text-size-small;
+        }
+    }
+
+    @include respond(phone){
+        width: 25rem;
+      }
    
 }
