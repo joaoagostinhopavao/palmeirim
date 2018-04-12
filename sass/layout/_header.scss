@@ -2,18 +2,38 @@
 
 
 .header{
-  height: 95vh;
-  background-image: /*linear-gradient(
+  height: 85vh;
+  background-image: linear-gradient(
                   to top left,
                   rgba($cor-primaria-claro,0.1),
-                  rgba($cor-primaria-escuro,0.15)),*/
+                  rgba($cor-primaria-escuro,0.15)),
                   url(../img/banner-principal-Baixo_tablet.jpg);
   background-size: cover;
   background-position: top;
   position:relative;
-  clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
-  -moz-clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+    clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
+    height: 95vh;
+  }
+
+  @media only screen and (min-resolution:192dpi) and (min-width:37.5em),
+         only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:37.5em),
+         only screen and (min-width:125em){
+          background-image: linear-gradient(
+            to top left,
+            rgba($cor-primaria-claro,0.1),
+            rgba($cor-primaria-escuro,0.15)),
+            url(../img/banner-principal-Baixo_tablet.jpg);
+         }
+ 
+
+  @include respond(phone){
+    clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh,0 85vh);
+  }
 
 
   &__logo-box{

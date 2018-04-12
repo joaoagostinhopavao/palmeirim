@@ -16,7 +16,8 @@
 // MEDIA QUERY MANAGER
 
 /*
-0-600px:        Phone
+0-360:          Mini
+360-600px:      Phone
 600-900px:      Tablet portait
 900-1200px:     Tablet Landscape
 [1200 - 1800]:  Estilos normais
@@ -33,6 +34,10 @@ ORDEM: base + typography > general layout + grid > page layout > components
 1em = 16px;
 */
 @mixin respond($breakpoint){
+    @if $breakpoint == mini {
+        @media(max-width:22.5em){@content}; //360px (360/16)
+    }
+
     @if $breakpoint == phone {
         @media(max-width:37.5em){@content}; //600px (600/16)
     }

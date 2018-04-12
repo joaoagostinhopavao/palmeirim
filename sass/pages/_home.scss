@@ -1,10 +1,29 @@
+/**
+ *  // HACK PARA O SAFARI. SÓ O SAFARI É QUE LÊ A SEGUINTE INSTRUÇÃO:
+ * seletor:not(:root:root) {
+      regras
+    } */
+
+
+
 .section-historia{
   background-color: $cor-cinza-claro-1;
   padding:25rem 0 15rem 0;
-  margin-top:-30vh;
+  margin-top:-22rem;
 
   @include respond(tab-land){
     padding-top:15rem;
+    margin-top:-31rem;
+  }
+
+  @include respond(tab-port){
+    padding-top:25rem;
+    margin-top:-33rem;
+  }
+
+  @include respond(phone){
+    padding-top:35rem;
+    margin-top:-40rem;
   }
 
   &__text{
@@ -28,20 +47,20 @@
   }
 
   &__foto{
-    width: 70rem;
+    width: 68rem;
     position: absolute;
     right: $body-padding;
-    top: 73.5vh;
+    top: 63.5rem;
 
     @include respond(tab-land){
       width: 50rem;
-      top: 78vh;
+      top: 78rem;
       
     }
 
     @include respond(tab-port){
       width: 50rem;
-      top: 78vh;
+      top: 78rem;
       right: 0;
     }
 
@@ -53,37 +72,64 @@
 
 
 .section-fichas-tecnicas{
+  
   display:block;
-  margin-top:-20rem;
-  padding:22rem 0;
-  padding-bottom:35rem;
+  margin-top:-10rem;
+  padding-top:15rem;
+  padding-bottom:15rem;
   background-image: linear-gradient(
      to top right,
      rgba($cor-primaria-claro,0),
      rgba($cor-primaria-escuro,1)),
      url(../img/banner-vinhos-TXT-baixa-3_tablet.jpg);
      background-size: cover;
-  background-position: 0rem -5rem;
+     background-position: top;
 
-  clip-path: polygon(0 20vh, 100% 0, 100% 80vh,0 100vh);
-  -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 80vh,0 100vh);
-  -moz-clip-path: polygon(0 20vh, 100% 0, 100% 80vh,0 100vh);
+  transform:skewY(-7deg);
 
-  
+  & > * {
+    transform: skewY(7deg);
+  }
+
+  /*
+    Se o ecrã tiver a resolução minima de um MAC (192dpi) e o TAMANHO do ecra
+    for superior a 37.5em, deve mostrar uma imagem com uma resolução superior. 
+    
+        OU
+    
+    Se a DENSIDADE for 2px e o TAMANHO do ecra
+    for superior a 37.5em, deve mostrar uma imagem com uma resolução superior.
+    
+        OU
+
+    Desde que o ecran tenha um TAMANHO superior a 125em, deve mostrar uma
+    imagem com uma resolução superior.
+
+  */
+  @media only screen and (min-resolution:192dpi) and (min-width:37.5em),
+         only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:37.5em),
+         only screen and (min-width:125em){
+          background-image: linear-gradient(
+            to top right,
+            rgba($cor-primaria-claro,0),
+            rgba($cor-primaria-escuro,1)),
+          url(../img/banner-vinhos-TXT-baixa-3_tablet.jpg);
+  }
+
+
   @include respond(tab-land){
-    clip-path: none;
-    -webkit-clip-path: none;
-    -moz-clip-path: none;
     margin-top:-10rem;
     padding-top:11rem;
   }
 
 }  
 
+
+
 .section-guia{
   background-color: $cor-cinza-claro-1;
   padding:20rem 0 5rem 0;
-  margin-top: -30rem;
+  margin-top: -10rem;
 
   @include respond(tab-land){
     padding-top:10rem;
@@ -94,8 +140,6 @@
   background-color: $cor-cinza-claro-1;
   padding:5rem 0 10rem 0;
   margin-top:0rem;
-
- 
 }
 
 .section-quintas{
@@ -115,7 +159,7 @@
     margin-top:-25rem;
   }
   &-fotos--6{
-    @include respond(tab-port){
+    @include respond(tab-land){
       width:0;
     }
   }

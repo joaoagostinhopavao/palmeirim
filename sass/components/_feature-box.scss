@@ -2,10 +2,19 @@
     perspective: 1500rem;
     -moz-perspective: 1500rem;
     position:relative;
-    height: 48rem;
+    height: 40rem;
+    
+
+    @include respond(tab-land){
+        margin:0 10rem;
+    }
+
+    @include respond(phone){
+        margin:0;
+    }
     
     &__side{
-        height: 48rem;
+        height: 40rem;
         padding:1.5rem;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($cor-preta,.25);
@@ -30,7 +39,7 @@
             &-1,&-2,&-3,&-4{
                 //Titulo atrás
                 &__heading{
-                    font-size: 2.8rem;
+                    font-size: 2.5rem;
                     font-weight: 300;
                     text-transform: uppercase;
                     text-align:right;
@@ -38,7 +47,7 @@
                     color:$cor-branca; 
                     position:absolute;
                     top:2rem;
-                    left:3.8rem;
+                    left:3.8vmin;
                     width:85%;
                 }
                 &__heading-span{
@@ -52,12 +61,12 @@
                      
                 }
                 &__details{
-                    padding-top:9rem;
+                    padding-top:11rem;
                     ul{   
                         list-style: none;
                         li{
                             text-align: center;
-                            font-size: 1.5rem;
+                            font-size: 1.3rem;
                             padding:0.2rem;
                             &:not(:last-child){
                                 border-bottom:1px solid $cor-cinza-escuro;
@@ -73,10 +82,8 @@
                     display:inline-block;
                     white-space: nowrap;
                     padding: 2rem;
-                   
                     margin-left:50%;
                     transform: translateX(-50%);
-                
                 }
 
           
@@ -84,7 +91,8 @@
 
             &-1{
                 &__details{
-                    line-height: 1.8rem;
+                    line-height: 1.7rem;
+                    letter-spacing:-0.05rem;
                 }
             }
 
@@ -105,7 +113,7 @@
 
             &-3{
                 &__details{
-                    line-height: 2rem;
+                    line-height: 1.7rem;
                 }
                 &__heading-span{
                     padding:0.65rem 1.5rem;
@@ -122,7 +130,7 @@
 
             &-4{
                 &__details{
-                    line-height: 2.4rem;
+                    line-height: 1.7rem;
                 }
                 &__heading-span{
                     padding:0.65rem 1.5rem;
@@ -130,14 +138,9 @@
                     box-decoration-break:clone;
                     background-image: -moz-linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria,.85));
                     background-image: -webkit-linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria,.85));
-                    background-image: linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria,.85));
-
-                     
-                }
-                
+                    background-image: linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria,.85));    
+                }            
             }
-
-       
         }
     }
     
@@ -150,18 +153,30 @@
     }
 
     //FRONT SIDE STYLING
-    &__foto{ 
-        width: 20rem;
-        margin-top:4rem;
-        //margin-left:2.5rem;
-    }
-    &__btn-box{
-        position:absolute;
-        left:21rem;
-        top:20rem;
-    }
-    &__btn{
-        width:6rem;
-    }
+        &__foto{ 
+            width: 20rem;
+            margin-top:4rem;
+            margin-left:5%;
+
+
+            @include respond(tab-land){
+                margin-left:24%;  
+            }
+            @include respond(tab-port){
+                margin-left:15%;  
+            }
+
+            @include respond(phone){
+                margin-left:13%;  
+              }
+        }
+        &__btn-box{
+            position:absolute;
+            right:-3vh;
+            top:20vh;
+        }
+        &__btn{
+            width:6rem;
+        }
 }
   
