@@ -10,7 +10,7 @@
     }
 
     @include respond(phone){
-        margin:0;
+        margin:2rem;
     }
     
     &__side{
@@ -84,9 +84,7 @@
                     padding: 2rem;
                     margin-left:50%;
                     transform: translateX(-50%);
-                }
-
-          
+                }        
             } 
 
             &-1{
@@ -150,6 +148,7 @@
 
     &:hover &__side--back{
         transform: rotateY(0);
+  
     }
 
     //FRONT SIDE STYLING
@@ -167,7 +166,7 @@
             }
 
             @include respond(phone){
-                margin-left:13%;  
+                margin-left:4%;  
               }
         }
         &__btn-box{

@@ -1,5 +1,6 @@
 .footer{
   margin-top:-30vh;
+  height: 95vh;
   background-image: linear-gradient(
                     to top left,
                     rgba($cor-primaria-claro,1),
@@ -7,12 +8,13 @@
                     url(../img/banner-principal-Baixo.jpg);
   background-size: cover;
   background-position: top;
+  padding-top:12rem;
 // Recorte
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
     -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
     -moz-clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
     clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
-    padding: 10rem 0;
+ 
   }
 
 
@@ -33,12 +35,12 @@
     margin-bottom: 8rem;
 
     @include respond(tab-port){
-      margin-bottom: 4rem;
+      //margin-bottom: 4rem;
       margin-top:10rem;
     }
   } 
   &__logo{
-      width:15rem;
+      width:10rem;
       height: auto;
 
       @include respond(tab-port){
@@ -49,8 +51,13 @@
     border:none;
 
     .col-1-of-3{ 
+
+      @include respond(tab-land){
+        margin-bottom:1rem !important;
+      }
+
       @include respond(tab-port){
-        margin-bottom:1.5rem !important;
+        margin-bottom:1rem !important;
       }
 
       @include respond(phone){
