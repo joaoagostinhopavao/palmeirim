@@ -1,0 +1,45 @@
+.button-facebook-fixo{
+
+    position:fixed;
+    top: 15rem;
+    right:5.2rem;
+    z-index:1000;
+    
+
+    @include respond(tab-land){
+        right: 4.5rem;
+    }
+    
+    @include respond(tab-port){
+        right: 3rem;
+    }
+
+    @include respond(phone){
+        top:7.5rem;
+        right: 2rem;
+    }
+    
+
+    &__img{
+        width:6rem;
+        @include respond(phone){
+            width:3.5rem;
+        }
+        //box-shadow: 0 1rem 3rem rgba($cor-preta, 0.2); 
+    }
+    &__link{
+        transition:all 0.2s;
+        &:link,&:visited{
+            display:block;
+           
+        }
+        &:hover{
+            transform:rotate(20deg);
+            @include respond(tab-port){
+                transform:none;
+            }
+        } 
+    }
+
+   
+} 

@@ -39,7 +39,7 @@
             margin-right: $gutter-horizontal;
             @include respond(tab-land){
                 margin-right:0;
-                margin-bottom:$gutter-vertical;
+                margin-bottom:5px;;
             }
     
             @include respond(tab-port){

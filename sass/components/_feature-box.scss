@@ -4,14 +4,25 @@
     position:relative;
     height: 40rem;
     
+    
 
     @include respond(tab-land){
-        margin:0 10rem;
+        margin:2rem 10rem;
     }
 
     @include respond(phone){
-        margin:2rem;
+        margin:1.5rem 4rem;
+        //overflow-y:hidden;
     }
+
+    @include respond(mini){
+        margin:1.5rem 4rem;
+        //overflow-y:hidden;
+    }
+
+    
+
+
     
     &__side{
         height: 40rem;
@@ -166,13 +177,14 @@
             }
 
             @include respond(phone){
-                margin-left:4%;  
+                margin-left:3%;  
               }
+
         }
         &__btn-box{
             position:absolute;
-            right:-3vh;
-            top:20vh;
+            right:-1rem;
+            top:17rem;
         }
         &__btn{
             width:6rem;

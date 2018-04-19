@@ -50,15 +50,15 @@ body{
 }
 
 .heading-secondary{ //Estes headings contêm uma linha por detrás do titulo
-  //font-weight: 700;
   color:$cor-titulo-secundario;
-  //border:1px solid red;
   position: relative;
+
+  margin-top:5rem;
 
   &--main{
     display: inline-block; 
     position:absolute;
-    top:0;
+    top:-1rem;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap; // Para que os espaços entre as palavras não deem origem a novas linhas
@@ -134,6 +134,101 @@ body{
   }
 }
 
+.heading-secondary-inv{
+  font-weight: 900;
+  color:$cor-titulo-secundario;
+  //border:1px solid green;
+  position: relative;
+
+  @include respond(tab-land){
+    margin-bottom: 10rem !important;
+  }
+  
+  @include respond(tab-port){
+    margin-bottom: 10rem !important;
+  }
+
+  @include respond(phone){
+    margin-bottom: 10rem !important;
+  }
+  
+  &--main{
+    //border: 1px solid red;
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 400;
+    display: inline-block;
+    position:absolute;
+    top:-1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; // Para que os espaços entre as palavras não deem origem a novas linhas
+    letter-spacing: .5rem;
+
+    @include respond(tab-land){
+      font-size:3rem;
+      letter-spacing: .5rem;
+    }
+    
+    @include respond(tab-port){
+      font-size:2.5rem;
+      letter-spacing: .5rem;
+    }
+
+    @include respond(phone){
+      font-size:2rem;
+    }
+  }
+
+  &--sub{
+    //border: 1px solid blue;
+    font-family: 'Merriweather', serif;
+    font-size:4rem;
+    font-style: italic;
+    font-weight: 400;
+    display: table;
+    top:5rem;
+    position:absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-align: center;
+  
+    letter-spacing: .5rem;
+    
+    @include respond(tab-land){
+      top:3rem;
+    }
+    
+    &::before,&::after{
+      border-top: $espessura-separador solid $cor-separador;
+      content:"";
+      display:table-cell;
+      position:relative;
+      top:0em;
+      width:$separador-subtitulo;
+
+
+    } 
+    &::before{right: calc(#{$espaco-separador-subtitulo} + 2rem)}
+    &::after{left: calc(#{$espaco-separador-subtitulo} + 2rem)}
+
+    @include respond(tab-land){
+      font-size:3.5rem;
+    }
+
+    @include respond(tab-port){
+      font-size:2.5rem;
+    }
+
+    @include respond(phone){
+      font-size:2rem;
+    }
+  }
+}
+
 .heading-terciario{
   position:relative;
   color:$cor-titulo-terciario;
@@ -190,97 +285,7 @@ body{
   }
 }
 
-.heading-secondary-inv{
-    font-weight: 900;
-    color:$cor-titulo-secundario;
-    //border:1px solid green;
-    position: relative;
 
-    @include respond(tab-land){
-      margin-bottom: 10rem !important;
-    }
-    
-    @include respond(tab-port){
-      margin-bottom: 10rem !important;
-    }
-
-    @include respond(phone){
-      margin-bottom: 10rem !important;
-    }
-    
-    &--main{
-      //border: 1px solid red;
-      font-family: 'Merriweather', serif;
-      font-size: 4rem;
-      font-style: italic;
-      font-weight: 400;
-      display: inline-block;
-      position:absolute;
-      top:0;
-      left: 50%;
-      transform: translateX(-50%);
-      white-space: nowrap; // Para que os espaços entre as palavras não deem origem a novas linhas
-      letter-spacing: .5rem;
-
-      @include respond(tab-land){
-        font-size:3rem;
-        letter-spacing: .5rem;
-      }
-      
-      @include respond(tab-port){
-        font-size:2.5rem;
-        letter-spacing: .5rem;
-      }
-  
-      @include respond(phone){
-        font-size:2rem;
-      }
-    }
-
-    &--sub{
-      //border: 1px solid blue;
-      font-family: 'Merriweather', serif;
-      font-size:5rem;
-      font-style: italic;
-      font-weight: 400;
-      display: table;
-      top:$entrelinhamento-titulo;
-      position:absolute; 
-      left: 50%;
-      transform: translateX(-50%);
-      white-space: nowrap;
-      text-transform: uppercase;
-      text-align: center;
-    
-      letter-spacing: .5rem;
-      
-      
-      &::before,&::after{
-        border-top: $espessura-separador solid $cor-separador;
-        content:"";
-        display:table-cell;
-        position:relative;
-        top:0em;
-        width:$separador-subtitulo;
-
-
-      } 
-      &::before{right: calc(#{$espaco-separador-subtitulo} + 2rem)}
-      &::after{left: calc(#{$espaco-separador-subtitulo} + 2rem)}
-
-      @include respond(tab-land){
-        font-size:3.5rem;
-      }
-  
-      @include respond(tab-port){
-        font-size:2.5rem;
-      }
-  
-      @include respond(phone){
-        font-size:2rem;
-      }
-    }
-  }
 
   .card{
     &-foto-titulo{

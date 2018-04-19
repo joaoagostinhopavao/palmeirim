@@ -1,6 +1,5 @@
 .footer{
   margin-top:-30vh;
-  height: 95vh;
   background-image: linear-gradient(
                     to top left,
                     rgba($cor-primaria-claro,1),
@@ -16,16 +15,13 @@
     clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
  
   }
-
-
   @include respond(phone){
     -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
     -moz-clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
     clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
   }
- 
   @include respond(tab-port){
-    padding: 3rem 0;  
+    //padding: 3rem 0;  
     margin-top:-25vh;
   }
 
@@ -33,48 +29,30 @@
   &__logo-box{
     text-align: center;
     margin-bottom: 8rem;
+    margin-top:8rem;
+    //border: 1px solid yellow;
 
     @include respond(tab-port){
       //margin-bottom: 4rem;
       margin-top:10rem;
+
     }
   } 
   &__logo{
       width:10rem;
       height: auto;
-
-      @include respond(tab-port){
-        width:10rem;
-      }
-  }
-  &__navigation{
-    border:none;
-
-    .col-1-of-3{ 
-
-      @include respond(tab-land){
-        margin-bottom:1rem !important;
-      }
-
-      @include respond(tab-port){
-        margin-bottom:1rem !important;
-      }
-
-      @include respond(phone){
-        margin-bottom:1rem !important;
-      }
-    }
   }
 
   &__contacts{
-    height: 1rem;
+    //height: 1rem;
     border-top: 1px solid $cor-cinza-claro-1;
     
     .col-1-of-3{
-      @include respond(tab-port){
+      @include respond(tab-land){
         margin-bottom:1.5rem !important;
         transform:translateX(-30%);
       }
+
 
       @include respond(phone){
         margin-bottom:1rem !important;
@@ -88,6 +66,7 @@
     position:relative;
     margin-top:1.5rem;
     display:inline-block;
+    
     &--icon{
       width:4rem;
 
@@ -98,13 +77,13 @@
     }
     &--text {
       white-space: nowrap;
-      margin-left:6rem;
+      margin-left:4rem;
       text-align:left;
       position:absolute;
       top:0.8rem; 
       @include respond(tab-port){
         top:0.6rem;
-        margin-left:4rem;
+        margin-left:3rem;
       }  
     }
 
@@ -112,7 +91,7 @@
 
   &__copyright{
     color:$cor-cinza-claro-1;
-    width:100%; 
+    padding:3rem;
   }
   &__list{
     list-style-type: none;

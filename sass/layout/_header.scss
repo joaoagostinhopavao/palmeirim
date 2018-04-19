@@ -10,6 +10,7 @@
                   url(../img/banner-principal-Baixo_tablet.jpg);
   background-size: cover;
   background-position: top;
+  margin-bottom:30px; // Margem para o texto de baixo
   position:relative;
 
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
