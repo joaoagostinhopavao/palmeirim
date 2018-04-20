@@ -13,13 +13,20 @@
     -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
     -moz-clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
     clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
+
  
   }
   @include respond(phone){
-    -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
+    /*-webkit-clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
     -moz-clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
-    clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
+    clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);*/
+    clip-path:none;
+    -webkit-clip-path:none;
   }
+  @include respond(phone){ 
+    margin-top:-25vh;
+  }
+
   @include respond(tab-port){
     //padding: 3rem 0;  
     margin-top:-25vh;
@@ -32,10 +39,13 @@
     margin-top:8rem;
     //border: 1px solid yellow;
 
-    @include respond(tab-port){
-      //margin-bottom: 4rem;
-      margin-top:10rem;
+    
+    @include respond(phone){
+      margin-top:0;
+    }
 
+    @include respond(tab-port){
+      margin-top:10rem;
     }
   } 
   &__logo{

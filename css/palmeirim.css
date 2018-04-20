@@ -831,7 +831,7 @@ body {
     .button-facebook-fixo__link:link, .button-facebook-fixo__link:visited {
       display: block; }
     .button-facebook-fixo__link:hover {
-      transform: rotate(20deg); }
+      transform: scale(1.1); }
       @media (max-width: 56.25em) {
         .button-facebook-fixo__link:hover {
           transform: none; } }
@@ -960,9 +960,14 @@ body {
       clip-path: polygon(0 20vh, 100% 0, 100% 100vh, 0 100vh); } }
   @media (max-width: 37.5em) {
     .footer {
-      -webkit-clip-path: polygon(0 20vh, 100% 0, 100% 100vh, 0 100vh);
-      -moz-clip-path: polygon(0 20vh, 100% 0, 100% 100vh, 0 100vh);
-      clip-path: polygon(0 20vh, 100% 0, 100% 100vh, 0 100vh); } }
+      /*-webkit-clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
+    -moz-clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);
+    clip-path: polygon(0 20vh, 100% 0, 100% 100vh,0 100vh);*/
+      clip-path: none;
+      -webkit-clip-path: none; } }
+  @media (max-width: 37.5em) {
+    .footer {
+      margin-top: -25vh; } }
   @media (max-width: 56.25em) {
     .footer {
       margin-top: -25vh; } }
@@ -970,6 +975,9 @@ body {
     text-align: center;
     margin-bottom: 8rem;
     margin-top: 8rem; }
+    @media (max-width: 37.5em) {
+      .footer__logo-box {
+        margin-top: 0; } }
     @media (max-width: 56.25em) {
       .footer__logo-box {
         margin-top: 10rem; } }

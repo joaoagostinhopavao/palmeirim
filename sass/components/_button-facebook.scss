@@ -34,7 +34,7 @@
            
         }
         &:hover{
-            transform:rotate(20deg);
+            transform:scale(1.1);
             @include respond(tab-port){
                 transform:none;
             }
