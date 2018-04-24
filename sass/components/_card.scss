@@ -7,6 +7,7 @@
     @include respond(phone){
         margin: 3rem 6rem 0 6rem;
         padding:6rem 3rem 3rem 3rem; 
+        position: relative;
       }
 
     &-foto{
@@ -17,8 +18,9 @@
             margin-top:0;
         }
         @include respond(phone){
-            width: 25rem;
-            margin-left: -5rem;
+            width: 20rem;
+            margin-left: -0.5rem;
+
         } 
     }
 
@@ -26,10 +28,12 @@
         @include respond(tab-port){
             width: 15rem;
             margin-top:0;
+            
         }
         @include respond(phone){
             width: 15rem;
             margin-top:0;
+            margin-left:2rem;
         }
     }
 

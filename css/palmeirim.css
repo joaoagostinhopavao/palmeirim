@@ -681,7 +681,8 @@ body {
   @media (max-width: 37.5em) {
     .card {
       margin: 3rem 6rem 0 6rem;
-      padding: 6rem 3rem 3rem 3rem; } }
+      padding: 6rem 3rem 3rem 3rem;
+      position: relative; } }
   .card-foto {
     width: 40rem;
     margin-left: -8rem; }
@@ -690,8 +691,8 @@ body {
         margin-top: 0; } }
     @media (max-width: 37.5em) {
       .card-foto {
-        width: 25rem;
-        margin-left: -5rem; } }
+        width: 20rem;
+        margin-left: -0.5rem; } }
   @media (max-width: 56.25em) {
     .card-foto-titulo {
       width: 15rem;
@@ -699,7 +700,8 @@ body {
   @media (max-width: 37.5em) {
     .card-foto-titulo {
       width: 15rem;
-      margin-top: 0; } }
+      margin-top: 0;
+      margin-left: 2rem; } }
   @media (max-width: 37.5em) {
     .card-txt {
       font-size: 1.3rem; } }
@@ -994,7 +996,7 @@ body {
       .footer__contacts .col-1-of-3 {
         margin-bottom: 1rem !important; } }
   .footer__contact-item {
-    color: white;
+    color: white !important;
     position: relative;
     margin-top: 1.5rem;
     display: inline-block; }
