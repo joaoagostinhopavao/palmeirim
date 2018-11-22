@@ -410,6 +410,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 4rem; }
 
+.u-margin-bottom-xsmall {
+  margin-bottom: 1.5rem; }
+
 .u-margin-top-super {
   margin-top: 20rem; }
 
@@ -421,6 +424,9 @@ body {
 
 .u-margin-top-small {
   margin-top: 4rem; }
+
+.u-margin-top-xsmall {
+  margin-top: 1.5rem; }
 
 .u-line-height-paragraph-small {
   line-height: 1rem; }
@@ -782,13 +788,56 @@ body {
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
-    height: 50rem;
     width: 75%;
     background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     opacity: 0;
-    transform: translate(50%, -50%) scale(0.5);
-    transition: all 0.3s; }
+    transform: translate(-550%, -50%) scale(0.5);
+    transition: all 0.5s 0.2s;
+    display: table;
+    overflow: hidden;
+    padding: 2rem;
+    font-size: 1.5rem; }
+  .popup__left {
+    width: 50%;
+    display: table-cell; }
+  .popup__right {
+    width: 50%;
+    display: table-cell;
+    vertical-align: top;
+    padding: 2rem 3rem; }
+  .popup__img {
+    display: block;
+    width: 100%;
+    margin-left: -2px; }
+  .popup__columns {
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #e23749;
+    -ms-column-count: 2;
+    -ms-column-gap: 4rem;
+    -ms-column-rule: 1px solid #e23749;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 4rem;
+    -webkit-column-rule: 1px solid #e23749;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #e23749;
+    hyphens: auto; }
+    .popup__columns > ul {
+      padding-bottom: 6rem; }
+  .popup__text {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    width: 80%; }
+    .popup__text--img {
+      width: 60%;
+      float: left; }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -803,7 +852,7 @@ body {
     font-size: 3rem;
     text-decoration: none;
     display: inline-block;
-    transition: all 0.3s;
+    transition: all 0.5s;
     line-height: 1; }
   .popup__close:hover, .popup__close:active {
     color: #982630; }
