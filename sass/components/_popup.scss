@@ -12,74 +12,56 @@
 
     &__content{  
         @include center-horizontal-and-vertical;
-        //height: 50rem; //só para o desenho. depois retirar
-        width:75%;
+        height: 42rem; //necessário para haver scroll no iphone
+        width:70%;
         background-color:$cor-branca;
         box-shadow: 0 2rem 4rem rgba($cor-preta, .2);
         border-radius: 4px;
         opacity:0;
         transform: translate(-550%,-50%) scale(0.5);
         transition: all 0.5s 0.2s;
-        display: table;
-        overflow: hidden;
+        overflow: auto;
         padding: 2rem;
         font-size:1.5rem;
+
+        @include respond(tab-land){
+            height: 52rem;
+        }
+        @include respond(tab-port){
+            height: 72rem;
+        }
+        @include respond(phone){
+            height: 42rem;
+        }
     }
 
     &__left{
-        width: 50%;
-        display: table-cell;;
+        vertical-align: top;
+        padding: 2rem 2rem;
     }
     &__right{
-        width: 50%;
-        display: table-cell;
         vertical-align: top;
-        padding: 2rem 3rem;
+        padding: 2rem 2rem;
     }
     &__img{
         display:block;
-        width: 100%;
-        margin-left: -2px;
-
-    }
-    &__columns{
-        -moz-column-count: 2;
-        -moz-column-gap: 4rem;
-        -moz-column-rule: 1px solid $cor-primaria-claro;
-
-        -ms-column-count: 2;
-        -ms-column-gap: 4rem;
-        -ms-column-rule: 1px solid $cor-primaria-claro;
-
-        -webkit-column-count: 2;
-        -webkit-column-gap: 4rem;
-        -webkit-column-rule: 1px solid $cor-primaria-claro;
-
-        -moz-hyphens: auto;
-        -ms-hyphens: auto;
-        -webkit-hyphens: auto;
-
-        column-count: 2;
-        column-gap: 4rem;
-        column-rule: 1px solid $cor-primaria-claro;
-
-        hyphens: auto;
-
-        &>ul{
-            padding-bottom: 6rem;
+        width: 90%;
+        float:left;
+        @include respond(tab-port){
+                 width: 40%;
+             }
+        @include respond(tab-land){
+            width: 40%;
         }
-
     }
+
     &__text{
-        display:block;
         font-size: 1.4rem;
-        margin-bottom: 4rem;
-        width: 80%;
+    }
 
-        &--img {
-            width: 60%;
-            float: left;
-        }
+    &__btn{
+        clear: both;
+        text-align: center;
     }
 
     &:target{
@@ -104,6 +86,51 @@
             display: inline-block;
             transition:all 0.5s;
             line-height: 1;
+            @include respond(phone){
+                visibility: hidden;
+            }
+            @include respond(tab-port){
+                visibility: hidden;
+            }
+            @include respond(tab-land){
+                visibility: hidden;
+            }
+        }
+        &:hover,
+        &:active{
+            color:$cor-primaria;
+        }
+    }
+
+    &__close--bottom{
+        &:link,
+        &:visited{
+            color:$cor-cinza-escuro;
+            position: absolute;
+            bottom:15rem;
+            right: 2.5rem;
+            font-size: 5rem;
+            text-decoration: none;
+            display: inline-block;
+            transition:all 0.5s;
+            line-height: 1;
+            visibility: hidden;
+            @include respond(tab-land){
+                bottom:62rem;
+                right: 12rem;
+                visibility: visible;
+            }
+            @include respond(tab-port){
+                bottom:85rem;
+                right:8rem;
+                visibility: visible;
+            }
+            @include respond(phone){
+                right:2.5rem;
+                bottom:52rem;
+                visibility: visible;
+            }
+
         }
         &:hover,
         &:active{
