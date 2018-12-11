@@ -95,6 +95,13 @@
     transform: skewY(7deg);
   }
 
+  & > a {
+    top: 4rem;
+    left:45%;
+    transform: translateX(-50%);
+    transform: skewY(7deg);
+  }
+
   /*
     Se o ecrã tiver a resolução minima de um MAC (192dpi) e o TAMANHO do ecra
     for superior a 37.5em, deve mostrar uma imagem com uma resolução superior. 

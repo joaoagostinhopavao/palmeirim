@@ -103,6 +103,15 @@
                     line-height: 1.7rem;
                     letter-spacing:-0.05rem;
                 }
+
+                &__heading-span{
+                    padding:0.65rem 1.5rem;
+                    -webkit-box-decoration-break:clone;
+                    box-decoration-break:clone;
+                    background-image: -moz-linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria-escuro,.85));
+                    background-image: -webkit-linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria-escuro,.85));
+                    background-image: linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria-escuro,.85));
+                }
             }
 
             &-2{
@@ -113,9 +122,9 @@
                     padding:0.65rem 1.5rem;
                     -webkit-box-decoration-break:clone;
                     box-decoration-break:clone;
-                    background-image: -moz-linear-gradient(to right bottom, rgba($cor-secundaria-claro,.85),rgba($cor-secundaria-escuro,.85));
-                    background-image: -webkit-linear-gradient(to right bottom, rgba($cor-secundaria-claro,.85),rgba($cor-secundaria-escuro,.85));
-                    background-image: linear-gradient(to right bottom, rgba($cor-secundaria-claro,.85),rgba($cor-secundaria-escuro,.85)); 
+                    background-image: -moz-linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria-escuro,.85));
+                    background-image: -webkit-linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria-escuro,.85));
+                    background-image: linear-gradient(to right bottom, rgba($cor-primaria-claro,.85),rgba($cor-primaria-escuro,.85));
                 }
                
             }
