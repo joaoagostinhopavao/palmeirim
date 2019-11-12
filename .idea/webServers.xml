@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="39f5db64-9cd1-4c6a-825f-e25497fde1c9" name="Palmeirim" url="http://palmeirimdeinglaterra.com">
+        <fileTransfer host="palmeirimdeinglaterra.com" port="1022" rootFolder="/home2/palmeiri" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="1022" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
