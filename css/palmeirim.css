@@ -95,6 +95,9 @@ img {
       width: 50%;
       height: 75rem; } }
 
+.color-adjust-rose {
+  color: #f4586f; }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -549,6 +552,12 @@ body {
   color: #fff; }
   .btn--cor-vinho-branco::after {
     background-color: #c5b205; }
+
+.btn--cor-vinho-rose {
+  background-color: #f4586f;
+  color: #fff; }
+  .btn--cor-vinho-rose::after {
+    background-color: #f4586f; }
 
 .btn::after {
   /* Por detrás do botão */

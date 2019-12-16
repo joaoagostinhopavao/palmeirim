@@ -55,6 +55,15 @@
     }
   }
 
+  &--cor-vinho-rose{
+    background-color: $cor-terciaria;
+    color: $cor-branca;
+
+    &::after{
+      background-color: $cor-terciaria;
+    }
+  }
+
   &::after{ /* Por detrás do botão */
     content:""; /* É obrigatório*/
     display: inline-block;/* É obrigatório, mas pode não ser inline-block*/

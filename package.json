@@ -21,5 +21,8 @@
   "homepage": "https://github.com/joaoagostinhopavao/palmeirim#readme",
   "devDependencies": {
     "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "liveserver": "^0.1.20"
   }
 }
